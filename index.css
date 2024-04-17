@@ -1,6 +1,6 @@
 /* Banner+Serach */
 .banner-container {
-    background-image: url('/imgs/frontpage-banner.jpg');
+    background-image: url('./imgs/frontpage-banner.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -119,7 +119,7 @@
     background-color: #ccc;
     background:
         linear-gradient(100.29deg, rgba(8, 8, 8, 1.00), rgba(73, 6, 128, 1.00) 50%, transparent 50%) center center /100% 100%,
-        url('/imgs/Produce-Introduction.jpg') right center /auto 100%;
+        url('./imgs/Produce-Introduction.jpg') right center /auto 100%;
 }
 
 /*  background:
@@ -347,7 +347,7 @@
 
 /* 即刻體驗造音流程 */
 .search-footer {
-    background-image: url('/imgs/enjoy-background.png');
+    background-image: url('./imgs/enjoy-background.png');
     background-size: cover;
     background-position: center center;
     width: 100%;

@@ -2,7 +2,7 @@
 .product-solution {
     width: 100%;
     height: 100vh;
-    background-image: url(/imgs/product-solution-background.png);
+    background-image: url(./imgs/product-solution-background.png);
     background-size: cover;
     background-position: center center;
     z-index: -1;

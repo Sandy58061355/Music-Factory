@@ -104,7 +104,7 @@
 .job-description {
     width: 100%;
     height: 100vh;
-    background: url(/imgs/hiring-background.png);
+    background: url(./imgs/hiring-background.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -206,7 +206,7 @@
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
     position: absolute;
     z-index: 0;
-    background: url("/imgs/good-salary.jpg");
+    background: url("./imgs/good-salary.jpg");
     background-repeat: no-repect;
     background-size: cover;
     background-position: center center;
@@ -232,7 +232,7 @@
     position: absolute;
     left: 25%;
     z-index: -1;
-    background: url("/imgs/comfortable-environment.jpg");
+    background: url("./imgs/comfortable-environment.jpg");
     background-repeat: no-repect;
     background-size: cover;
     background-position: center center;
@@ -256,7 +256,7 @@
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
     position: absolute;
     right: 0;
-    background: url("/imgs/learning-source.jpg");
+    background: url("./imgs/learning-source.jpg");
     background-repeat: no-repect;
     background-size: cover;
     background-position: center center;
@@ -282,7 +282,7 @@
 .apply-table {
     width: 100%;
     height: 100vh;
-    background: url(/imgs/apply-background.png);
+    background: url(./imgs/apply-background.png);
     background-size: cover;
     background-position: center center;
 
