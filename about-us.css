@@ -18,7 +18,7 @@
 
 .main-banner-side {
     width: 80%;
-    background-image: url('.../imgs/banner-cd-player.png');
+    background-image: url('../imgs/banner-cd-player.png');
     background-size: cover;
     background-position: center center;
     z-index: -1;
