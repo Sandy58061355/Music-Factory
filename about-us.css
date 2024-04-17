@@ -1,0 +1,235 @@
+/* banner */
+.about-us-banner {
+    width: 100%;
+}
+
+.about-us-banner-container {
+    width: 100%;
+    display: flex;
+    height: 560px;
+
+}
+
+.banner-left-side {
+    width: 10%;
+    background:
+        linear-gradient(269.52deg, rgba(192, 152, 195, 1.00) 0%, rgba(73, 58, 81, 1.00) 72.00000286102295%);
+}
+
+.main-banner-side {
+    width: 80%;
+    background-image: url('../imgs/banner-cd-player.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right-side {
+    width: 10%;
+    background:
+        linear-gradient(269.52deg, rgba(73, 58, 81, 1.00) 0%, rgba(166, 142, 179, 1.00) 91.00000262260437%);
+}
+
+.about-us-content {
+    color: white;
+    font-family: 'Inter-Medium', sans-serif;
+    line-height: 300%;
+    font-weight: 500;
+}
+
+.about-us-content .hello {
+    font-size: 36px;
+}
+
+.about-us-content .introduce {
+    font-size: 26px;
+}
+
+.about-us-content .listen-somethings {
+    font-size: 20px;
+}
+
+/* banner--End */
+/* Factory-Story */
+.factory-story {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(258.25deg, rgba(99, 77, 116, 1.00) 0%, rgba(30, 23, 36, 1.00) 100%);
+
+}
+
+.story-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.story-title {
+    width: 50%;
+    color: #ffffff;
+    font-family: var(---font-family, 'Lemonada-Bold', sans-serif);
+    display: flex;
+    margin-right: 50px;
+}
+
+.story-title h2 {
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.story-title p {
+    font-size: 16px;
+    line-height: 200%;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+.red-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+}
+
+
+.red-cd img {
+    height: 300px;
+    width: 300px;
+}
+
+.red-cd-cover {
+    position: absolute;
+    right: -200px;
+}
+
+.red-cd-cover img {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(173, 173, 173, 1);
+}
+
+/* Factory-Story--End */
+/* Brand-value */
+.brand-value {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-89.88deg, rgba(49, 49, 50, 1.00) 0%, rgba(6, 6, 39, 1.00) 0.009999999747378752%, rgba(149, 149, 152, 1.00) 50%, rgba(21, 60, 97, 1.00) 100%);
+}
+
+.brand-value-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.green-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 150px;
+}
+
+.green-cd img {
+    height: 300px;
+    width: 300px;
+}
+
+.green-cd-cover {
+    position: absolute;
+    left: -200px;
+}
+
+.green-cd-cover img {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(62, 81, 153, 1);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.brand-value-title {
+    width: 50%;
+    color: #ffffff;
+    font-family: var(---font-family, 'Lemonada-Bold', sans-serif);
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-value-title h2 {
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.brand-value-title p {
+    font-size: 16px;
+    line-height: 200%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+/* Brand-value--End */
+/* 感謝觀看 */
+.to-be-developed {
+    width: 100%;
+}
+
+.to-be-developed-container {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+}
+
+.developed-banner-left-side {
+    width: 10%;
+    background: linear-gradient(269.66deg, rgba(44, 33, 40, 1.00) 0%, rgba(146, 110, 133, 1.00) 100%);
+}
+
+.developed-main-banner-side {
+    width: 80%;
+    background-image: url('/imgs/coming-soon.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developed-content h2 {
+    color: #ffffff;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 24px;
+    line-height: 300%;
+    font-weight: 500;
+}
+
+.developed-banner-right-side {
+    width: 10%;
+    background: linear-gradient(0.23deg, rgba(64, 27, 28, 1.00) 5.841143429279327%, rgba(56, 43, 44, 1.00) 18.746303021907806%, rgba(55, 28, 30, 1.00) 36.619362235069275%, rgba(40, 33, 34, 1.00) 55.289989709854126%, rgba(87, 66, 61, 1.00) 71.23811841011047%, rgba(103, 98, 97, 1.00) 83.99613499641418%, rgba(110, 105, 103, 1.00) 92.07516312599182%);
+}
+
+/* 感謝觀看--End */

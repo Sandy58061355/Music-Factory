@@ -1,0 +1,109 @@
+.music-generate-header {
+    width: 100%;
+    height: 70px;
+    border: 1px soild black;
+    background-color: #3E3939;
+}
+
+.music-header-container {
+    display: flex;
+    width: 1152px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.music-header-container .logo img {
+    height: 70px;
+}
+
+.music-style-search {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-style-select {
+    height: 36px;
+    width: 70px;
+    margin: auto;
+    font-size: 16px;
+    color: black;
+    background-color: rgba(173, 127, 155, 1);
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+
+.music-style-select option {
+    background-color: #fff;
+    color: black;
+}
+
+.music-style-search-bar {
+    position: relative;
+}
+
+.music-style-search-bar .search-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+}
+
+.music-style-search-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 10px;
+    /* 設置背景為透明 */
+}
+
+.music-style-search-btn a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.music-style-search-btn .fa-regular,
+.music-style-search-btn .fa-circle-play {
+    font-size: 24px;
+}
+
+.user-account {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-account .user-pic {
+    padding: 0 20px;
+}
+
+.user-pic .fa-regular,
+.user-pic .fa-circle-user {
+    font-size: 26px;
+    color: white;
+}
+
+.sign-out-button {
+    background: #d66f6f;
+    border-radius: 15px;
+    width: 70px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sign-out-button a {
+    color: #000000;
+    text-align: center;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -1,0 +1,465 @@
+/* hiring-main-page */
+.hiring-main-page {
+    width: 100%;
+    height: 560px;
+    background: linear-gradient(0.51deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiring-main-page-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.hiring-circle {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+}
+
+.hiring-circle img {
+    width: 100%;
+}
+
+.hiring-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.slogan-chi h1 {
+    color: #ffffff;
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 60px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.slogan-en {
+    padding: 0 20px;
+    letter-spacing: 0.4em;
+}
+
+.slogan-en .slogan-base {
+    color: rgba(179, 179, 179, 0.69);
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 60px;
+    line-height: 145%;
+    font-weight: 500;
+
+
+}
+
+.slogan-en .slogan-overlay {
+
+    background: linear-gradient(to left, #ffffff, #ffffff), linear-gradient(to left, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 60px;
+    line-height: 145%;
+    font-weight: 500;
+    position: absolute;
+    left: 18px;
+    bottom: -1px;
+
+}
+
+.hiring-retangle {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+}
+
+.hiring-retangle img {
+    width: 100%;
+}
+
+.hiring-triangle {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 200px;
+    bottom: -120px;
+}
+
+.hiring-triangle img {
+    width: 100%;
+}
+
+/* hiring-main-page--End */
+/* 招聘條件 */
+.job-description {
+    width: 100%;
+    height: 100vh;
+    background: url(/imgs/hiring-background.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-description-container {
+    width: 80%;
+    margin: auto;
+}
+
+.jd-title {
+    color: #ffffff;
+    font-family: 'Lemonada-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 400;
+    padding: 50px 0 40px 100px;
+}
+
+.jd-detail {
+    display: flex;
+}
+
+.jd-detail-pic {
+    height: 370px;
+    width: 370px;
+    padding: 0 20px 0 120px;
+}
+
+.jd-detail-pic img {
+    width: 100%;
+}
+
+.jd-detail-content {
+    color: #ffffff;
+    font-family: 'Inter-Medium', sans-serif;
+    padding-top: 60px;
+    padding-left: 80px;
+}
+
+.jd-detail-content span {
+    font-size: 20px;
+    line-height: 300%;
+    font-weight: 500;
+}
+
+.jd-detail-content ul {
+    list-style-type: disc;
+}
+
+.jd-detail-content li {
+    font-size: 18px;
+    line-height: 200%;
+    font-weight: 500;
+}
+
+/* 招聘條件--End */
+/* 公司提供 */
+.our-support {
+    width: 100%;
+    height: 100vh;
+}
+
+.our-support-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.our-support-title {
+    color: #ffffff;
+    height: 20vh;
+    width: 100%;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 30px;
+    line-height: 150%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(242.13deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
+    letter-spacing: 2px;
+}
+
+.our-support-things {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.good-salary {
+    width: 35%;
+    height: 80vh;
+    /* object-fit: cover; */
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    position: absolute;
+    z-index: 0;
+    background: url("/imgs/good-salary.jpg");
+    background-repeat: no-repect;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.good-salary p {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.comfortable-environment {
+    width: 50%;
+    height: 80vh;
+    object-fit: cover;
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+    position: absolute;
+    left: 25%;
+    z-index: -1;
+    background: url("/imgs/comfortable-environment.jpg");
+    background-repeat: no-repect;
+    background-size: cover;
+    background-position: center center;
+}
+
+.comfortable-environment p {
+    height: 98%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+    display: flex;
+    padding-left: 50px;
+    align-items: flex-end;
+}
+
+.learning-source {
+    width: 35%;
+    height: 80vh;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    right: 0;
+    background: url("/imgs/learning-source.jpg");
+    background-repeat: no-repect;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.learning-source p {
+    height: 98%;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 40px;
+}
+
+/* 我們提供--End */
+/* 應聘表單 */
+.apply-table {
+    width: 100%;
+    height: 100vh;
+    background: url(/imgs/apply-background.png);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.apply-table-container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.apply-content {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 700;
+    padding: 30px 0;
+
+}
+
+.apply-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.applicant-name {
+    padding: 0px 0 30px 150px;
+}
+
+.applicant-name span {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    padding-right: 115px;
+}
+
+.applicant-name .name-space {
+    width: 500px;
+    height: 20px;
+}
+
+.applicant-phone-number {
+    padding: 0px 0 30px 150px;
+}
+
+.applicant-phone-number span {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    padding-right: 80px;
+}
+
+.applicant-phone-number .phone-number-space {
+    width: 500px;
+    height: 20px;
+}
+
+.applicant-email {
+    padding: 0px 0 30px 150px;
+}
+
+.applicant-email span {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+    padding-right: 80px;
+}
+
+.applicant-email .email-space {
+    width: 500px;
+    height: 20px;
+}
+
+.professional-music-style {
+    padding: 0px 0 50px 150px;
+    display: flex;
+    position: relative;
+}
+
+.music-style-content {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Bold', sans-serif;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+
+}
+
+.music-style-content .professional-style {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;
+
+}
+
+.music-style-content .choose {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.music-style-select {
+    height: 26px;
+    width: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: #3E3939;
+    text-align: center;
+    position: absolute;
+    left: 326px;
+}
+
+.professional-music-style .music-style-space {
+    width: 500px;
+    height: 20px;
+
+}
+
+
+.music-style-select option {
+    background-color: #fff;
+    color: black;
+}
+
+
+.submit-aquirement {
+    padding: 0px 0 50px 150px;
+    color: #ffffff;
+    text-align: left;
+    font-family: '-', sans-serif;
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.submit-aquirement .submit {
+    font-weight: 700;
+}
+
+.submit-aquirement .email-name {
+    font-weight: 700;
+}
+
+.submit-button {
+    background: rgba(113, 104, 104, 0.51);
+    border-radius: 20px;
+    width: 130px;
+    height: 48px;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    transition-duration: 0.1s;
+    background-color: #734276;
+}
+
+/* 應聘表單--End */

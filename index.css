@@ -1,0 +1,434 @@
+/* Banner+Serach */
+.banner-container {
+    background-image: url('/imgs/frontpage-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.slogan {
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    ;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.slogan-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    letter-spacing: -1px;
+    /* 減小字符間的間距 */
+}
+
+.style-tag {
+    width: 100%;
+}
+
+.style-tag ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+.style-tag li {
+    padding: 5px 20px;
+    margin: 0 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+
+}
+
+.search-select {
+    /* position: absolute; */
+
+    height: 36px;
+    width: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: #3E3939;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+
+}
+
+.search-select option {
+    background-color: #fff;
+    color: black;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    /* 設置背景為透明 */
+}
+
+.search-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-btn .fa-regular,
+.search-btn .fa-circle-play {
+    font-size: 24px;
+}
+
+/* Banner+Serach --End */
+/* 產品介紹 */
+.product-introduction {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    background:
+        linear-gradient(100.29deg, rgba(8, 8, 8, 1.00), rgba(73, 6, 128, 1.00) 50%, transparent 50%) center center /100% 100%,
+        url('/imgs/Produce-Introduction.jpg') right center /auto 100%;
+}
+
+/*  background:
+        linear-gradient(漸層角度, 漸層色(a),(b) 佔面積比例, 色彩 佔面積比例) 漸層位置 center center /寬高比例(100% 100%),
+        url(圖片位置) 位置 right center / 寬高比例auto 100%; */
+.pd-container {
+    width: 50%;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.pd-title-all {
+    margin-top: 150px;
+}
+
+.pd-title {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--h2-font-family, 'Lemonada-Regular', sans-serif);
+    line-height: var(--h2-line-height, 150%);
+    font-weight: var(--h2-font-weight, 400);
+}
+
+.en-pd-title {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Medium', sans-serif;
+    line-height: 234%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: 1px;
+    white-space: pre;
+}
+
+.en-pd-title .P-red {
+    color:
+        rgba(224, 64, 64, 0.73);
+}
+
+.en-pd-title .I-green {
+    color:
+        rgba(154, 231, 189, 1);
+}
+
+.pd-content {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 100px;
+    margin-top: 80px;
+}
+
+/* 產品介紹-END */
+/* 產品使用說明書 */
+.produce-manual {
+    width: 100%;
+    background-color: grey;
+    background: linear-gradient(175.07deg, rgba(55, 16, 87, 1.00) 0.42615788988769054%, rgba(93, 81, 102, 1.00) 99.80502724647522%);
+}
+
+.pm-container {
+    width: 80%;
+    margin: auto;
+}
+
+.pm-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.pm-title h2 {
+    color: #ffffff;
+    font-family: var(--h2-font-family, 'Lemonada-Regular', sans-serif);
+    font-size: 32px;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+.en-pm-title {
+    display: flex;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    white-space: pre;
+}
+
+.en-pm-title .H-red {
+    color: rgba(224, 64, 64, 1);
+}
+
+.en-pm-title .i-yellow {
+    color: rgba(255, 199, 194, 1);
+
+}
+
+.en-pm-title .W-green {
+    color: rgba(154, 231, 189, 1);
+}
+
+.pm-card-list {
+    padding: 20px 0;
+}
+
+.pm-card {
+    display: flex;
+    width: 100%;
+    background-color: grey;
+    height: 260px;
+    margin-bottom: 70px;
+    border-radius: 30px;
+
+}
+
+.pm-card .pm-pic {
+    width: 45%;
+    position: relative;
+}
+
+.pm-card .pm-pic img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 280px;
+    position: absolute;
+    top: -10px;
+    right: -1px;
+}
+
+.pm-card-title {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pm-card-title h3 {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--h2-font-family, 'Lemonada-Regular', sans-serif);
+    font-size: 22px;
+    line-height: 150%;
+    padding-bottom: 30px;
+}
+
+.pm-card-title p {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(---font-family, 'Inter-Medium', sans-serif);
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.pm-card:nth-child(1) {
+    background: linear-gradient(-82.99deg, rgba(145, 124, 158, 1.00) 0%, rgba(82, 17, 133, 1.00) 99.9208152294159%);
+}
+
+.pm-card:nth-child(1) .pm-card-title {
+    padding-left: 60px;
+}
+
+.pm-card:nth-child(2) {
+    background: linear-gradient(90deg, rgba(191, 169, 89, 1.00) 31.187203526496887%, rgba(221, 6, 66, 1.00) 100%);
+}
+
+.pm-card:nth-child(2) .pm-card-title {
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.pm-card:nth-child(2) .pm-pic {
+
+    right: 1px;
+}
+
+.pm-card:nth-child(3) {
+    background: linear-gradient(90deg, rgba(33, 29, 97, 1.00) 0%, rgba(12, 141, 87, 1.00) 51.499998569488525%);
+}
+
+.pm-card:nth-child(3) .pm-card-title {
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+/* 產品使用說明書-End */
+/* 工廠出品 */
+.our-songs {}
+
+.os-container {}
+
+.os-title-all {}
+
+.os-card-list {}
+
+.os-card {}
+
+.os-card-background {}
+
+.os-style-tag {}
+
+.os-console {}
+
+.os-left-button {}
+
+.os-right {}
+
+.os-circle-carousal {}
+
+.os-rectangle {}
+
+/* 即刻體驗造音流程 */
+.search-footer {
+    background-image: url('/imgs/enjoy-background.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+}
+
+.container-search-footer {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box-footer {
+    display: flex;
+}
+
+.try-now {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-now h2 {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-ExtraBold', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 60px;
+}
+
+.search-bar-footer {
+    display: flex;
+    position: relative;
+}
+
+.search-input-footer {
+    width: 350px;
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+
+}
+
+.search-select-footer {
+    height: 36px;
+    width: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: #3E3939;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+
+}
+
+.search-select-footer option {
+    background-color: #fff;
+    color: black;
+}
+
+.search-btn-footer {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    /* 設置背景為透明 */
+}
+
+.search-btn-footer a {
+    color: black;
+}
+
+.search-btn-footer .fa-regular,
+.search-btn-footer .fa-circle-play {
+    font-size: 24px;
+}
+
+/* 即刻體驗造音流程--End */

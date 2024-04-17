@@ -1,0 +1,16 @@
+<svg width="93" height="84" viewBox="0 0 93 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="extrude-group">
+<g id="side-faces">
+<path id="side-face" fill-rule="evenodd" clip-rule="evenodd" d="M31.0615 18.0504L81.5215 84.0038L92.2725 66.3781L41.8126 0.424805L31.0615 18.0504Z" fill="#6580E1"/>
+<path id="side-face_2" fill-rule="evenodd" clip-rule="evenodd" d="M81.5213 84.0037L0.358398 73.8922L11.1094 56.2666L92.2723 66.3781L81.5213 84.0037Z" fill="#6580E1"/>
+<path id="side-face_3" fill-rule="evenodd" clip-rule="evenodd" d="M0.358398 73.8923L31.0613 18.0504L41.8124 0.424805L11.1094 56.2667L0.358398 73.8923Z" fill="#6580E1"/>
+</g>
+<path id="cap-face" d="M31.0613 18.0503L81.5213 84.0036L0.358398 73.8922L31.0613 18.0503Z" fill="url(#paint0_linear_1029_3138)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1029_3138" x1="0.358399" y1="50.1357" x2="81.5213" y2="50.1357" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CF76D7"/>
+<stop offset="1" stop-color="#C85959"/>
+</linearGradient>
+</defs>
+</svg>
