@@ -85,14 +85,14 @@ body {
     bottom: 70px; */
 }
 
-.side-menu-bar a:nth-child(5) {
+.side-menu-bar a:nth-child(3) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.side-menu-bar a:nth-child(5)::after {
+.side-menu-bar a:nth-child(3)::after {
     content: '';
     position: absolute;
     border-top: 2px solid #ffffff;
@@ -168,35 +168,118 @@ body {
     color: #000000;
     background-color: #ffffff;
     font-weight: 700;
+    margin-left: 30px;
 }
 
 
 .music-cassette-list {
     display: flex;
+    overflow-x: auto;
 }
+
 
 .music-cassette-list .cassette {
     width: 33.333333%;
-    padding: 40px 0;
-    text-align: center
+    padding: 40px;
+    text-align: center;
 }
 
 .music-cassette-list .cassette .cassette-pic {
     width: 200px;
 }
 
-.music-cassette-list .cassette .favorite {
+.cassette .track-setting {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.track-setting .favorite {
     width: 25px;
     opacity: .7;
-    bottom: 605px;
-    right: 20px;
+
 }
 
 .music-cassette-list .cassette span {
     color: #f0f0f0;
     text-align: center;
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+/* music-generate-section--End */
+/* music-reccomand-section */
+
+.recommand-song-sec {
+    margin: auto;
+
+}
+
+.recommand-song-title {
+    margin: auto;
+}
+
+.recommand-song-title h2 {
+    padding-top: 50px;
+    color: #f0f0f0;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.recommand-song-title h2::after {
+    content: " ";
+    height: 3px;
+    width: 90px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #7c19fb;
+    border-radius: 5px;
+
+}
+
+.music-recommand-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px 20px;
+    overflow-y: auto;
+}
+
+.music-recommand-list .recommand-album {
+    text-align: center;
+}
+
+.recommand-album .recommand-album-pic {
+    width: 120px;
+}
+
+.recommand-album .recommand-album-setting {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.recommand-album-setting .favorite {
+    width: 25px;
+    opacity: .7;
+
+}
+
+.recommand-album-setting span {
+    color: #f0f0f0;
+    text-align: center;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 18px;
     line-height: 150%;
     font-weight: 500;
 }
