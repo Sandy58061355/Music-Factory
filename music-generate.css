@@ -15,6 +15,7 @@ body {
     width: 80%;
     margin: auto;
     /* outline: 2px solid red; */
+    display: flex;
 }
 
 /* 側邊欄 */
@@ -116,4 +117,86 @@ body {
     border-left: 2px solid rgba(25, 251, 197, 1);
     padding-left: 5px;
     height: 10px;
+}
+
+/* 側邊欄--End */
+/* music-generate-section */
+.music-generate-section {
+    width: 80%;
+}
+
+.generate-song-sec {
+    margin: auto;
+
+}
+
+.generate-song-title {
+    margin: auto;
+}
+
+.generate-song-title h2 {
+    padding-top: 50px;
+    color: #f0f0f0;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.generate-song-title h2::after {
+    content: " ";
+    height: 3px;
+    width: 90px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #7c19fb;
+    border-radius: 5px;
+
+}
+
+.song-style-tag span {
+    padding: 5px 20px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+
+.music-cassette-list {
+    display: flex;
+}
+
+.music-cassette-list .cassette {
+    width: 33.333333%;
+    padding: 40px 0;
+    text-align: center
+}
+
+.music-cassette-list .cassette .cassette-pic {
+    width: 200px;
+}
+
+.music-cassette-list .cassette .favorite {
+    width: 25px;
+    opacity: .7;
+    bottom: 605px;
+    right: 20px;
+}
+
+.music-cassette-list .cassette span {
+    color: #f0f0f0;
+    text-align: center;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
 }
