@@ -1,6 +1,129 @@
-.sign-in-container {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.sign-in-page {
+    min-height: 560px;
     height: 100vh;
+    background: url('./imgs/frontpage-banner.jpg');
+    background-size: cover;
+    background-position: center center;
     display: flex;
-    background: url('./imgs/Produce-Introduction.jpg') left center / 50% 100vh no-repeat, linear-gradient(242.13deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%) right center / 50% 100% no-repeat;
+    align-items: center;
+}
+
+.sign-in-container {
+    height: 85%;
+    padding: 0 30px;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 50, 0.6);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.sign-in-input {
+    height: 80%;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-choose {
+    padding: 20px 0 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sign-choose a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: 400;
+}
+
+.sign-choose:nth-child(1) {
+    position: relative;
+}
+
+.sign-choose:nth-child(1)::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: rgba(234, 80, 228, 1);
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    border-radius: 5px;
+
+}
+
+.sign-choose span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.input-section {}
+
+.input-section span {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter-Regular', sans-serif;
+    padding-bottom: 15px;
+}
+
+.user-account {
+    padding: 20px 0;
+}
+
+.user-account .user-account-space {
+    width: 300px;
+    height: 28px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.user-password {
+    padding: 20px 0 40px 0;
+}
+
+.user-password .user-password-space {
+    width: 300px;
+    height: 28px;
+    border-radius: 10px;
+    border: none;
+}
+
+.sign-button {
+    padding: 30px 0;
+}
+
+.sign-button a {
+    margin-top: 30px;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background-color: rgba(113, 104, 104, 0.51);
+    filter: hue-rotate(110deg);
+}
+
+.sign-button a:hover {
+    background: #2C0C17;
+    color: white;
+    box-shadow: 0 0 5px rgba(113, 104, 104, 0.51),
+        0 0 25px rgba(113, 104, 104, 0.51),
+        0 0 50px rgba(113, 104, 104, 0.51),
+        0 0 200px rgba(113, 104, 104, 0.51);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }

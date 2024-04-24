@@ -283,3 +283,16 @@ body {
     line-height: 150%;
     font-weight: 500;
 }
+
+/* music-reccomand-section--End */
+
+/* 音樂播放 */
+.music-player {}
+
+.music-player-container {
+    width: 100%;
+    height: 100px;
+    background: rgba(64, 78, 100, 0.80);
+    border: 1px solid #000000;
+    opacity: .7;
+}
