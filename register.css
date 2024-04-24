@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-.sign-in-page {
+.register-page {
     min-height: 560px;
     height: 100vh;
     background: url('./imgs/frontpage-banner.jpg');
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.sign-in-container {
+.register-container {
     height: 85%;
     padding: 0 30px;
     display: flex;
@@ -21,7 +21,7 @@
 
 }
 
-.sign-in-input {
+.register-input {
     height: 80%;
     width: auto;
     margin: auto;
@@ -30,13 +30,13 @@
     align-items: center;
 }
 
-.sign-choose {
-    padding: 20px 0 40px 0;
+.register-choose {
+    padding: 20px 0 20px 0;
     display: flex;
     align-items: center;
 }
 
-.sign-choose a {
+.register-choose a {
     font-size: 24px;
     text-decoration: none;
     color: white;
@@ -45,57 +45,63 @@
     font-weight: 400;
 }
 
-.sign-choose:nth-child(1) {
+.register-choose a:last-child {
     position: relative;
 }
 
-.sign-choose:nth-child(1)::after {
+.register-choose a:last-child::before {
     content: "";
     height: 2px;
     width: 50px;
     background: rgba(234, 80, 228, 1);
     position: absolute;
-    bottom: 30px;
-    left: 10px;
+    bottom: -8px;
+    left: 9px;
     border-radius: 5px;
 
 }
 
-.sign-choose span {
+.register-choose span {
     color: #ffffff;
     font-size: 20px;
 }
 
+.register-input-section {
+    /* padding: 10px 0; */
+}
 
-.input-section span {
-    display: block;
+.user-info-title {
     color: white;
     font-size: 18px;
     font-family: 'Inter-Regular', sans-serif;
     padding-bottom: 15px;
 }
 
-.user-account {
-    padding: 20px 0;
+.user-info-title .memo {
+    font-size: 12px;
 }
 
-.user-account .user-account-space {
+.user-name {
+    padding: 10px 0;
+}
+
+.register-input-section input {
     width: 300px;
     height: 28px;
     border-radius: 10px;
     border: none;
 }
 
-
-.user-password {
-    padding: 20px 0 40px 0;
+.user-email {
+    padding: 10px 0;
 }
 
-.user-password .user-password-space {
-    width: 300px;
-    height: 28px;
-    border-radius: 10px;
-    border: none;
+.user-setting-password {
+    padding: 10px 0;
+}
+
+.user-comfirm-password {
+    padding: 10px 0;
 }
 
 .sign-button {

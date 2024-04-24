@@ -455,11 +455,18 @@
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s;
+    filter: hue-rotate(110deg);
+    border: none;
 }
 
 .submit-button:hover {
-    transition-duration: 0.1s;
-    background-color: #734276;
+    background: #2C0C17;
+    color: white;
+    box-shadow: 0 0 5px rgba(113, 104, 104, 0.51),
+        0 0 25px rgba(113, 104, 104, 0.51),
+        0 0 50px rgba(113, 104, 104, 0.51),
+        0 0 200px rgba(113, 104, 104, 0.51);
 }
 
 /* 應聘表單--End */
