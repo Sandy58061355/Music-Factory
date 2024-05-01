@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="footer.css">
     <script src=" https://kit.fontawesome.com/5d2e40022e.js" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -71,7 +73,7 @@
                 </select>
                 <div class="search-bar">
                     <input id="search-sec" type="text" class="search-input" placeholder="搜索">
-                    <button class="search-btn"><a href="music-generate.html"><i
+                    <button class="search-btn disabled"><a href="music-generate.html" id="search-link"><i
                                 class="fa-regular fa-circle-play"></i></a></button>
                 </div>
             </div>
@@ -126,14 +128,14 @@
                         <img src="./imgs/generate-song.png" alt="產出音樂">
                     </div>
                     <div class="pm-card-title">
-                        <h3>生成音樂/調整樂曲速度/調性</h3>
-                        <p>系統會自動生成音樂，可以調整樂曲速度，並會推薦系統製作過的相似風格樂曲，供用戶聆聽、下載與收藏。</p>
+                        <h3>生成音樂/曲風推薦</h3>
+                        <p>系統會自動生成音樂，並會推薦系統製作過的相似風格樂曲，供用戶聆聽。</p>
                     </div>
                 </div>
                 <div class="pm-card">
                     <div class="pm-card-title">
-                        <h3>下載音檔、製作個人專輯介面</h3>
-                        <p>完成後除了可下載音樂片段，也可編輯生成有儀式感的個人專輯，除了音樂工廠提供的封面模板外﹑也可以自行編輯專輯名稱與專輯照片。</p>
+                        <h3>收藏與下載音檔</h3>
+                        <p>可以收藏與下載喜歡的音樂作品。</p>
                     </div>
                     <div class="pm-pic">
                         <img src="./imgs/download-song.png" alt="下載音樂">
@@ -198,14 +200,13 @@
                         <option value="Rock">搖滾</option>
                     </select>
                     <div class="search-bar-footer">
-                        <input type="text" class="search-input-footer" placeholder="搜索">
-                        <button class="search-btn-footer"><a href="music-generate.html"><i
-                                    class="fa-regular fa-circle-play"></i></a></button>
+                        <input id="search-footer" type="text" class="search-input-footer" placeholder="搜索">
+                        <button class="search-btn-footer disabled"><a href="music-generate.html"
+                                id="search-link-footer"><i class="fa-regular fa-circle-play"></i></a></button>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
     <!--Footer -->
     <section class="footer">
