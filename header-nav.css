@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* Header hover特效未完成，字體問題待解決 ，定位未寫*/
+
 .header {
     width: 100%;
     height: 70px;
@@ -8,64 +9,274 @@
     background-color: #3E3939;
 }
 
+
 .header-container {
     display: flex;
-    width: 1152px;
-    /* width: 90%; */
+    /* width: 1152px; */
+    width: 90%;
+    height: 70px;
     margin: auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .logo img {
     height: 70px;
 }
 
-.header-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/* humberger--End */
+#burger,
+.hb {
+    display: none;
 }
 
-.header-title ul {
-    display: flex;
+.hb {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    margin: 20px 0;
 }
 
-.header-title a {
-    text-decoration: none;
-    color: white;
-    padding: 30px;
-    font-size: 20px;
-    font-weight: bold;
+/* .hb input {
+    display: none;
+} */
+
+.hb span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 }
 
-.log-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hb span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
 }
 
-.log-button a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+.hb span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
 }
 
-.log-in {
-    background-color: #D66F6F;
-    color: white;
-    padding: 5px 20px;
-    margin: 5px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.hb span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
 }
 
-.sign-up {
-    background-color: #D66F6F;
-    color: white;
-    padding: 5px 20px;
-    margin: 5px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+input:checked~.hb span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
 }
 
+input:checked~.hb span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+input:checked~.hb span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+/* humberger--End */
+@media screen and (max-width:1068px) {
+    /* .header-title {
+        position: relative;
+        width: 50%;
+    } */
+
+    .header-container {
+        position: relative;
+        width: 90%;
+    }
+
+    .header-title ul {
+        display: none;
+        position: absolute;
+        background-color: #3E3939;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        border: 1px solid grey;
+    }
+
+    .header-title li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .header-title a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .log-button {
+        display: none;
+    }
+
+    .hb {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1068px) {
+    #burger:checked~.header-title ul {
+        display: block;
+    }
+
+    #burger:checked~.header-container .hb {
+        display: block;
+    }
+
+    .header-title li:hover {
+        background-color: ;
+    }
+
+    .header-title li+li {
+        border-top: 1px solid white;
+    }
+
+}
+
+/* @media screen and (min-width:1069px) {
+    .header-title {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header-title ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-title a {
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .log-in .sign-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .log-in {
+        height: 30px;
+        width: 30px;
+        background-color: #D66F6F;
+        color: white;
+        padding: 5px 20px;
+        margin: 5px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .log-in a {
+        font-size: 20px;
+        padding: 10;
+    }
+
+    .sign-up {
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 40px;
+        background-color: #D66F6F;
+        color: white;
+        padding: 5px 20px;
+        margin: 5px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .sign-up a {
+        font-size: 18px;
+        padding: 0 50px;
+    }
+
+} */
+
+@media screen and (min-width:1069px) {
+    .header-title {
+        margin: auto;
+    }
+
+    .header-title ul {
+        display: flex;
+        margin: 10px;
+    }
+
+    .header-title li {
+        padding: 0 20px;
+    }
+
+    .header-title a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .log-in {
+        margin: 0 -15px 0 20px;
+    }
+
+    .log-in a {
+        background-color: #D66F6F;
+        padding: 3px 20px;
+        border-radius: 15px;
+        font-weight: 500;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .sign-up a {
+        background-color: #D66F6F;
+        padding: 3px 20px;
+        border-radius: 15px;
+        font-weight: 500;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1180px) {
+    .header-title a {
+        font-size: 15px;
+    }
+
+    .log-button a {
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+/* 漢堡等會問人 */
 /* Header hover特效未完成 */

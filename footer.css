@@ -82,3 +82,37 @@
     text-align: center;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width:768px) {
+    .footer-container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-us {
+        padding-right: 20px;
+    }
+
+    .contact-us h3 {
+        font-size: 20px;
+    }
+
+    .follow-us {
+        padding-left: 0px;
+    }
+
+    .follow-us h3 {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .follow-us li img {
+        height: 26px;
+        width: 26px;
+    }
+}

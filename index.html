@@ -16,10 +16,12 @@
 <body>
     <!-- 導航欄 -->
     <section class="header">
+
         <div class="header-container">
             <div class="logo">
                 <a href="./index.html"><img src="./imgs/Logo-header.png" alt="header-Logo"></a>
             </div>
+            <input type="checkbox" id="burger">
             <nav class="header-title">
                 <ul>
                     <li><a href="index.html">首頁</a></li>
@@ -27,16 +29,17 @@
                     <li><a href="product-solution.html">產品與方案</a></li>
                     <li><a href="news.html">公告/最新消息</a></li>
                     <li><a href="hiring-plan.html">造音計畫</a></li>
+                    <li class="log-in"><a href="./sign-in.html">登入</a></li>
+                    <li class="sign-up"><a href="./register.html">註冊</a></li>
                 </ul>
             </nav>
-            <div class="log-button">
-                <div class="log-in">
-                    <a href="./sign-in.html">登入</a>
-                </div>
-                <div class="sign-up">
-                    <a href="./register.html">註冊</a>
-                </div>
-            </div>
+        </div>
+        <!-- 漢堡 -->
+        <label for="burger" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         </div>
     </section>
     <!-- Banner -->
@@ -51,9 +54,9 @@
             </div>
             <div class="style-tag">
                 <ul>
-                    <li>#溫柔的</li>
-                    <li>#快樂</li>
-                    <li>#鋼琴</li>
+                    <li id="tag-softly">#溫柔的</li>
+                    <li id="tag-happy">#快樂</li>
+                    <li id="tag-piano">#鋼琴</li>
                 </ul>
             </div>
             <div class="search-box">
@@ -67,7 +70,7 @@
                     <option value="Rock">搖滾</option>
                 </select>
                 <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="搜索">
+                    <input id="search-sec" type="text" class="search-input" placeholder="搜索">
                     <button class="search-btn"><a href="music-generate.html"><i
                                 class="fa-regular fa-circle-play"></i></a></button>
                 </div>
@@ -229,6 +232,8 @@
             版權所有© 2024Music Factory
         </div>
     </section>
+    <!-- Script -->
+    <script src="index.js"></script>
 </body>
 
 </html>

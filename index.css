@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
     letter-spacing: -1px;
     /* 減小字符間的間距 */
 }
@@ -48,12 +48,18 @@
 
 .style-tag li {
     padding: 5px 20px;
-    margin: 0 20px;
     border: 1px solid white;
     border-radius: 20px;
     font-size: 16px;
     margin: 20px;
+    cursor: pointer;
 }
+
+.style-tag li:hover {
+    background-color: rgba(182, 182, 182, 0.48);
+}
+
+
 
 .search-box {
     display: flex;
@@ -110,6 +116,30 @@
 .search-btn .fa-regular,
 .search-btn .fa-circle-play {
     font-size: 24px;
+}
+
+@media screen and (max-width:768px) {
+    .style-tag li {
+        font-size: 14px;
+        padding: 5px 8px;
+        margin: 10px 8px 20px 8px;
+    }
+
+    .slogan {
+        font-size: 32px;
+    }
+
+    .slogan-text {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .search-bar {
+        display: flex;
+        position: relative;
+        width: 80%;
+    }
+
 }
 
 /* Banner+Serach --End */
@@ -179,10 +209,37 @@
     color: #ffffff;
     text-align: left;
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
     line-height: 150%;
     margin-right: 100px;
     margin-top: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .product-introduction {
+        background-color: #ccc;
+        background:
+            url('./imgs/Produce-Introduction.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .pd-container {
+        width: 80%;
+    }
+
+    .en-pd-title {
+        line-height: 180%
+    }
+
+    .pd-content {
+        text-align: left;
+        margin: auto;
+        width: 100%;
+        line-height: 180%;
+        background: rgba(49, 49, 50, 0.6);
+        padding: 10px;
+    }
+
 }
 
 /* 產品介紹-END */
@@ -321,6 +378,64 @@
     padding-right: 40px;
 }
 
+@media screen and (max-width:768px) {
+    .pm-card {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .pm-card-title {
+        text-align: center;
+        width: 90%;
+    }
+
+    .pm-card-title h3 {
+        font-size: 20px;
+    }
+
+    .pm-card-title p {
+        font-size: 16px;
+    }
+
+    .pm-card:nth-child(1) .pm-card-title {
+        padding: 20px;
+    }
+
+    .pm-card .pm-pic {
+        width: 90%;
+        margin: auto;
+
+
+    }
+
+    .pm-card .pm-pic img {
+        height: 220px;
+        position: static;
+    }
+
+    .pm-card:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 13px;
+    }
+
+    .pm-card:nth-child(2) .pm-card-title {
+        padding: 20px;
+    }
+
+    .pm-card:nth-child(3) {
+        padding-bottom: 13px;
+    }
+
+    .pm-card:nth-child(3) .pm-card-title {
+        padding: 20px;
+    }
+}
+
+
 /* 產品使用說明書-End */
 /* 工廠出品 */
 .our-songs {}
@@ -364,7 +479,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .search-box-footer {
@@ -393,10 +508,11 @@
 }
 
 .search-input-footer {
-    width: 350px;
+    width: 100%;
     height: 30px;
     border-radius: 0 10px 10px 0;
     font-size: 16px;
+    padding: 0 100px 0 0;
 
 }
 
@@ -432,6 +548,19 @@
 .search-btn-footer .fa-regular,
 .search-btn-footer .fa-circle-play {
     font-size: 24px;
+}
+
+@media screen and (max-width:768px) {
+    .try-now {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .try-now h2 {
+        font-size: 28px;
+        padding: 40px 0;
+
+    }
 }
 
 /* 即刻體驗造音流程--End */
