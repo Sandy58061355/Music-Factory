@@ -84,4 +84,29 @@
     padding-bottom: 100px;
 }
 
-@media screen and (max-width:1175px) {}
+@media screen and (max-width:768px) {
+    .news-article-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .news-article-section {
+        width: 90%;
+    }
+
+    .news-content {
+        font-size: 14px;
+        line-height: 250%;
+        letter-spacing: 5px;
+        padding-bottom: 80px;
+    }
+
+    .news-article-section .news-pic {
+        width: 70%;
+        height: 250px;
+    }
+
+    .news-article-section .news-pic img {
+        height: 250px;
+    }
+}

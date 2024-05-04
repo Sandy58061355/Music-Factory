@@ -270,7 +270,6 @@
     width: 140px;
     /* object-fit: cover; */
     padding: 25px 0 10px 0;
-    /* outline: 2px solid red; */
 }
 
 .news-pic .news-date {
@@ -282,7 +281,7 @@
 }
 
 .news-card .card-topic {
-    position: relative;
+    margin: 20px 0 0 0;
 }
 
 .news-card .card-topic h3 {
@@ -310,9 +309,7 @@
     font-size: 12px;
     line-height: 150%;
     font-weight: 500;
-    position: absolute;
-    right: 15px;
-    bottom: -25px;
+    margin: 0 0 10px 140px;
     text-underline-offset: 4px;
 
 }
