@@ -126,3 +126,10 @@
         0 0 200px rgba(113, 104, 104, 0.51);
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
+
+@media screen and (max-width:768px) {
+    .sign-in-page {
+        min-height: 100vh;
+
+    }
+}

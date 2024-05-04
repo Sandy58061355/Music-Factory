@@ -2,7 +2,7 @@
 
 .register-page {
     height: 100vh;
-    min-height: 630px;
+    min-height: 600px;
     background: url('./imgs/frontpage-banner.jpg');
     background-size: cover;
     background-position: center center;
@@ -132,4 +132,11 @@
         0 0 50px rgba(113, 104, 104, 0.51),
         0 0 200px rgba(113, 104, 104, 0.51);
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+@media screen and (max-width:768px) {
+    .sign-in-page {
+        min-height: 100vh;
+
+    }
 }
