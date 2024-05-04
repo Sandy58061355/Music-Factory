@@ -2,10 +2,24 @@
 .hiring-main-page {
     width: 100%;
     height: 560px;
-    background: linear-gradient(0.51deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
+    /* background: linear-gradient(0.51deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hiring-plan-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .hiring-main-page-container {
@@ -17,7 +31,7 @@
     position: relative;
 }
 
-.hiring-circle {
+/* .hiring-circle {
     height: 200px;
     width: 200px;
     position: absolute;
@@ -27,20 +41,29 @@
 
 .hiring-circle img {
     width: 100%;
-}
+} */
 
 .hiring-slogan {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 
 .slogan-chi h1 {
     color: #ffffff;
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Segoe UI';
     font-size: 60px;
     line-height: 150%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.slogan-chi span {
+    color: #ffffff;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    line-height: 200%;
     font-weight: 500;
 }
 
@@ -55,8 +78,6 @@
     font-size: 60px;
     line-height: 145%;
     font-weight: 500;
-
-
 }
 
 .slogan-en .slogan-overlay {
@@ -70,12 +91,12 @@
     line-height: 145%;
     font-weight: 500;
     position: absolute;
-    left: 18px;
+    left: 111px;
     bottom: -1px;
 
 }
 
-.hiring-retangle {
+/* .hiring-retangle {
     height: 80px;
     width: 80px;
     position: absolute;
@@ -97,13 +118,43 @@
 
 .hiring-triangle img {
     width: 100%;
+} */
+@media screen and (max-width:768px) {
+    .hiring-main-page-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+    }
+
+    .slogan-chi h1 {
+        font-size: 40px;
+    }
+
+    .slogan-chi span {
+        font-size: 22px;
+    }
+
+    .slogan-en .slogan-base {
+        font-size: 40px;
+    }
+
+    .slogan-en .slogan-overlay {
+        font-size: 40px;
+        position: absolute;
+        left: 21px;
+        bottom: -1px;
+
+    }
 }
 
 /* hiring-main-page--End */
 /* 招聘條件 */
 .job-description {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 630px;
     background: url(./imgs/hiring-background.png);
     background-size: cover;
@@ -119,12 +170,14 @@
 }
 
 .jd-title {
+    width: 82%;
     color: #ffffff;
     font-family: 'Lemonada-Regular', sans-serif;
     font-size: 24px;
     line-height: 150%;
     font-weight: 400;
-    padding: 50px 0 40px 100px;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
 .jd-detail {
@@ -132,20 +185,26 @@
 }
 
 .jd-detail-pic {
-    height: 370px;
-    width: 370px;
-    padding: 0 20px 0 120px;
+    width: 50%;
+    /* height: 370px;
+    width: 370px; */
+    /* padding: 0 20px 0 120px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .jd-detail-pic img {
-    width: 100%;
+    /* width: 65%; */
+    width: 332px;
+
 }
 
 .jd-detail-content {
     color: #ffffff;
     font-family: 'Inter-Medium', sans-serif;
-    padding-top: 60px;
-    padding-left: 80px;
+    padding: 40px 0 0 50px;
+
 }
 
 .jd-detail-content span {
@@ -162,6 +221,37 @@
     font-size: 18px;
     line-height: 200%;
     font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .job-description-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .jd-title {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+
+    .jd-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jd-detail-pic {
+        width: 70%;
+    }
+
+    .jd-detail-pic img {
+        width: 100%;
+    }
+
+    .jd-detail-content {
+        padding: 20px 0 50px 0px;
+    }
 }
 
 /* 招聘條件--End */
