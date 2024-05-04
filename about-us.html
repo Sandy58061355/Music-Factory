@@ -46,7 +46,7 @@
                 <div class="about-us-content">
                     <span class="hello">嗨! 你好，</span><br>
                     <span class="introduce">接下來請允許我用幾首歌的時間與你介紹造音...</span><br>
-                    <span class="listen-somethings">(如果你想聽點什麼的話，點擊每張唱片，我們準備了不同風格的音樂，供你欣賞)</span>
+                    <span class="listen-somethings">(如果你想聽點什麼的話，點擊黑色膠片，我們準備了不同風格的音樂，供你欣賞)</span>
                 </div>
             </div>
             <div class="banner-right-side"></div>
@@ -61,12 +61,11 @@
                 <p>造音工廠（Music Factory）成立於2024年，命名為造音工廠就是希望所有熱愛音樂的人可以在這個“工廠”裡自由的敲敲打打，輕鬆打造屬於自己的音樂。
                 </p>
             </div>
-            <div class="red-album">
-                <div class="red-cd">
-                    <img src="./imgs/red-cd.png" alt="紅色黑膠">
-                </div>
+            <div class="red-album" onclick="playMusic('red-cd', 'audio1')">
+                <img id="red-cd" class="red-cd" src="./imgs/mf-story.svg" alt="關於造音黑膠">
                 <div class="red-cd-cover">
-                    <img src="./imgs/about-us-album1.png" alt="紅色黑膠封面">
+                    <img src="./imgs/about-us-album1.png" alt="關於造音黑膠封面">
+                    <audio id="audio1" src="./audio/mf-story.mp3"></audio>
                 </div>
             </div>
         </div>
@@ -74,12 +73,11 @@
     <!-- Brand-value- -->
     <section class="brand-value">
         <div class="brand-value-container">
-            <div class="green-album">
-                <div class="green-cd">
-                    <img src="./imgs/green-cd.png" alt="綠色黑膠">
-                </div>
+            <div class="green-album" onclick="playMusic('green-cd', 'audio2')">
+                <img id="green-cd" class="green-cd" src="./imgs/brand-value.svg" alt="品牌理念黑膠">
                 <div class="green-cd-cover">
-                    <img src="./imgs/about-us-album2.png" alt="綠色黑膠封面">
+                    <img src="./imgs/about-us-album2.png" alt="品牌理念黑膠封面">
+                    <audio id="audio2" src="./audio/brand-value.mp3"></audio>
                 </div>
             </div>
             <div class="brand-value-title">
@@ -127,6 +125,7 @@
             版權所有© 2024Music Factory
         </div>
     </section>
+    <script src="./about-us.js"></script>
 </body>
 
 </html>
