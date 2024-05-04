@@ -156,7 +156,7 @@
     width: 100%;
     /* height: 100vh; */
     min-height: 630px;
-    background: url(./imgs/hiring-background.png);
+    background: url('./imgs/hiring-background.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -258,127 +258,358 @@
 /* 公司提供 */
 .our-support {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 630px;
 }
 
-.our-support-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+@media screen and (min-width:769px) {
+    .our-support-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .our-support-title {
+        color: #ffffff;
+        height: 20vh;
+        min-height: 126px;
+        width: 100%;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 30px;
+        line-height: 150%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(242.13deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
+        letter-spacing: 2px;
+    }
+
+    .our-support-things {
+        height: 80vh;
+        min-height: 504px;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .good-salary {
+        width: 35%;
+        height: 80vh;
+        min-height: 504px;
+        /* object-fit: cover; */
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+        position: absolute;
+        z-index: 1;
+        background: url("./imgs/good-salary.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .good-salary .good-salary-title {
+        color: #ffffff;
+        text-align: left;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 700;
+        padding: 15px 20px;
+    }
+
+    .good-salary-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 504px;
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+        position: absolute;
+        top: 0;
+        background: whitesmoke;
+        z-index: 1;
+        opacity: 0;
+
+    }
+
+    .good-salary-overlay .good-salary-content {
+        color: black;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 700;
+        margin: 0 60px 0 20px;
+    }
+
+    .good-salary-overlay:hover {
+        opacity: 60%;
+        transition: 0.3s;
+
+    }
+
+
+    .comfortable-environment {
+        width: 50%;
+        height: 80vh;
+        min-height: 504px;
+        object-fit: cover;
+        /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+        position: absolute;
+        left: 25%;
+        z-index: 0;
+        background: url("./imgs/comfortable-environment.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .comfortable-environment .comfortable-environment-title {
+        height: 98%;
+        color: #ffffff;
+        text-align: left;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 700;
+        display: flex;
+        padding-left: 50px;
+        align-items: flex-end;
+    }
+
+    .comfortable-environment-overlay {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 504px;
+        position: absolute;
+        /* left: 25%; */
+        top: 0;
+        background: whitesmoke;
+        z-index: 1;
+        opacity: 0;
+
+    }
+
+    .comfortable-environment-overlay .comfortable-environment-content {
+        color: black;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 700;
+        margin: 0 80px;
+    }
+
+    .comfortable-environment-overlay:hover {
+        opacity: 60%;
+        transition: 0.3s;
+    }
+
+    .learning-source {
+        width: 35%;
+        height: 80vh;
+        min-height: 504px;
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+        position: absolute;
+        right: 0;
+        background: url("./imgs/learning-source.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .learning-source .learning-source-title {
+        height: 98%;
+        color: #ffffff;
+        text-align: left;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 40px;
+    }
+
+    .learning-source-overlay {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 504px;
+        position: absolute;
+        /* left: 25%; */
+        top: 0;
+        background: whitesmoke;
+        z-index: 1;
+        opacity: 0;
+
+    }
+
+    .learning-source-overlay .learning-source-content {
+        color: black;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 700;
+        margin: 0 10px 0 50px;
+    }
+
+    .learning-source-overlay:hover {
+        opacity: 60%;
+        transition: 0.3s;
+    }
+
 }
 
-.our-support-title {
-    color: #ffffff;
-    height: 20vh;
-    min-height: 126px;
-    width: 100%;
-    font-family: 'Inter-Bold', sans-serif;
-    font-size: 30px;
-    line-height: 150%;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(242.13deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
-    letter-spacing: 2px;
-}
+@media screen and (max-width:768px) {
+    .our-support-container {
+        width: 100%;
+        min-height: 630px;
+        background: linear-gradient(242.13deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
-.our-support-things {
-    height: 80vh;
-    min-height: 504px;
-    width: 100%;
-    display: flex;
-    position: relative;
-}
+    .our-support-title {
+        color: #ffffff;
+        width: 100%;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 30px;
+        line-height: 150%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        padding: 20px 0;
+    }
 
-.good-salary {
-    width: 35%;
-    height: 80vh;
-    min-height: 504px;
-    /* object-fit: cover; */
-    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
-    position: absolute;
-    z-index: 0;
-    background: url("./imgs/good-salary.jpg");
-    background-repeat: no-repect;
-    background-size: cover;
-    background-position: center center;
+    .our-support-things {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
 
+    .good-salary {
+        width: 100%;
+        height: 200px;
+        background: url("./imgs/good-salary.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        border-radius: 5px;
+        margin: 0 0 20px 0;
+    }
 
-}
+    .good-salary-title {
+        display: none;
+    }
 
-.good-salary p {
-    color: #ffffff;
-    text-align: left;
-    font-family: 'Inter-Bold', sans-serif;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 700;
-    padding: 15px 20px;
-}
+    .good-salary-overlay {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 
-.comfortable-environment {
-    width: 50%;
-    height: 80vh;
-    min-height: 504px;
-    object-fit: cover;
-    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
-    position: absolute;
-    left: 25%;
-    z-index: -1;
-    background: url("./imgs/comfortable-environment.jpg");
-    background-repeat: no-repect;
-    background-size: cover;
-    background-position: center center;
-}
-
-.comfortable-environment p {
-    height: 98%;
-    color: #ffffff;
-    text-align: left;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 700;
-    display: flex;
-    padding-left: 50px;
-    align-items: flex-end;
-}
-
-.learning-source {
-    width: 35%;
-    height: 80vh;
-    min-height: 504px;
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
-    position: absolute;
-    right: 0;
-    background: url("./imgs/learning-source.jpg");
-    background-repeat: no-repect;
-    background-size: cover;
-    background-position: center center;
+    .good-salary-content {
+        padding: 5px 10px;
+        color: white;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 600;
+        text-align: center;
+        background-color: rgba(74, 68, 68, 0.5);
+    }
 
 
-}
+    .comfortable-environment {
+        width: 100%;
+        height: 200px;
+        background: url("./imgs/comfortable-environment.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
 
-.learning-source p {
-    height: 98%;
-    color: #ffffff;
-    text-align: left;
-    font-family: 'Inter-Bold', sans-serif;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 700;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 40px;
+    .comfortable-environment-title {
+        display: none;
+    }
+
+    .comfortable-environment-overlay {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .comfortable-environment-content {
+        padding: 5px 10px;
+        color: white;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 600;
+        text-align: center;
+        background-color: rgba(74, 68, 68, 0.5);
+    }
+
+    .learning-source {
+        width: 100%;
+        height: 200px;
+        background: url("./imgs/learning-source.jpg");
+        background-repeat: no-repect;
+        background-size: cover;
+        background-position: center center;
+        margin: auto;
+        border-radius: 5px;
+        margin: 20px 0 40px 0;
+    }
+
+    .learning-source-title {
+        display: none;
+    }
+
+    .learning-source-overlay {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .learning-source-content {
+        padding: 5px 10px;
+        color: white;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 600;
+        text-align: center;
+        background-color: rgba(74, 68, 68, 0.5);
+    }
+
 }
 
 /* 我們提供--End */
 /* 應聘表單 */
 .apply-table {
     width: 100%;
-    height: 100vh;
     min-height: 630px;
     background: url(./imgs/apply-background.png);
     background-size: cover;
@@ -401,17 +632,20 @@
     font-weight: 700;
     padding: 30px 0;
 
+
 }
 
 .apply-information {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: center; */
+    text-align: center;
 
 }
 
 .applicant-name {
-    padding: 0px 0 30px 150px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .applicant-name span {
@@ -421,7 +655,6 @@
     font-size: 18px;
     line-height: 150%;
     font-weight: 700;
-    padding-right: 115px;
 }
 
 .applicant-name .name-space {
@@ -430,7 +663,9 @@
 }
 
 .applicant-phone-number {
-    padding: 0px 0 30px 150px;
+    /* padding: 0px 0 30px 150px; */
+    width: 100%;
+    padding: 20px 0;
 }
 
 .applicant-phone-number span {
@@ -440,7 +675,7 @@
     font-size: 18px;
     line-height: 150%;
     font-weight: 700;
-    padding-right: 80px;
+    /* padding-right: 80px; */
 }
 
 .applicant-phone-number .phone-number-space {
@@ -449,7 +684,8 @@
 }
 
 .applicant-email {
-    padding: 0px 0 30px 150px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .applicant-email span {
@@ -459,7 +695,7 @@
     font-size: 18px;
     line-height: 150%;
     font-weight: 700;
-    padding-right: 80px;
+    /* padding-right: 80px; */
 }
 
 .applicant-email .email-space {
@@ -468,9 +704,12 @@
 }
 
 .professional-music-style {
-    padding: 0px 0 50px 150px;
+    /* padding: 0px 0 50px 150px; */
+    padding: 20px 0;
+    width: 100%;
     display: flex;
-    position: relative;
+
+    justify-content: center;
 }
 
 .music-style-content {
@@ -481,7 +720,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 50px;
+    position: relative;
+    /* padding-right: 50px; */
 
 }
 
@@ -509,7 +749,7 @@
     background-color: #3E3939;
     text-align: center;
     position: absolute;
-    left: 326px;
+    left: 313px;
 }
 
 .professional-music-style .music-style-space {
