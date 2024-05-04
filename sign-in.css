@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .sign-in-page {
-    /* height: 100vh; */
+    height: 100vh;
     min-height: 630px;
     background: url('./imgs/frontpage-banner.jpg');
     background-size: cover;
