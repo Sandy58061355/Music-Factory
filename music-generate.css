@@ -435,6 +435,7 @@ body {
     border-radius: 50%;
     border: none;
     line-height: 45px;
+    cursor: pointer;
 }
 
 #prev,
@@ -442,12 +443,15 @@ body {
     color: rgba(217, 217, 217, 1);
     font-size: 20px;
     margin: 0 20px;
+    cursor: pointer;
 }
+
 
 #shuffle,
 #repeat {
     color: rgba(217, 217, 217, 1);
     font-size: 16px;
+    cursor: pointer;
 }
 
 .hide {
@@ -462,6 +466,7 @@ body {
     margin: 10px 0;
     border-radius: 10px;
     cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -474,6 +479,7 @@ body {
     width: 20%;
     background-color: #7C19FB;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .time-container {
@@ -491,6 +497,11 @@ body {
 #download {
     color: rgba(217, 217, 217, 1);
     font-size: 20px;
+    cursor: pointer;
+}
+
+button.active i {
+    color: #7C19FB;
 }
 
 @media screen and (max-width:768px) {

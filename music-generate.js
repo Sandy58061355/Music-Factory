@@ -4,7 +4,12 @@ window.addEventListener("load", function () {
     document.getElementById("btnHam").onclick = function () {
         //取得選單的參考
         let menu = document.getElementById("menu");
-        menu.classList.toggle("hidden");
+        //  檢測是否有hidden類, 再決定是要加入或移除
+        if (menu.classList.contains("hidden") === true) {
+            menu.classList.remove("hidden");
+        } else {
+            menu.classList.add("hidden");
+        }
     };
 }, false);
 

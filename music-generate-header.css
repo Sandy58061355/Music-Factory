@@ -125,12 +125,16 @@
 }
 
 @media screen and (max-width:768px) {
+    .music-generate-header {
+        width: 100%;
+
+    }
 
     .music-header-container {
         display: flex;
         width: 90%;
         margin: auto;
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
     }
 
@@ -192,7 +196,7 @@
     }
 
     #menu.hidden {
-        right: -100px;
+        right: -120px;
     }
 
     #menu li {
