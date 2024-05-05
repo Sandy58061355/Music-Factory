@@ -131,7 +131,7 @@
         width: 90%;
         margin: auto;
         justify-content: space-between;
-        /* position: relative; */
+        position: relative;
     }
 
     .logo {
@@ -161,15 +161,11 @@
 
     .hb-menu {
         height: 70px;
-        position: relative;
     }
 
     #btnHam {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        /* padding: 0 20px 0 80px; */
-        margin: auto;
         background: transparent;
         text-decoration: none;
         border: none;
@@ -187,17 +183,16 @@
     }
 
     #menu {
-        position: absolute;
-        right: -34px;
+        position: fixed;
+        right: 0px;
         top: 70px;
         width: 100px;
         background-color: #3E3939;
         transition: right 1s;
-        opacity: 1;
     }
 
     #menu.hidden {
-        opacity: 0;
+        right: -100px;
     }
 
     #menu li {
