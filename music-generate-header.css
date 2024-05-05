@@ -125,10 +125,6 @@
 }
 
 @media screen and (max-width:768px) {
-    .music-generate-header {
-        width: 100%;
-        /* overflow: hidden; */
-    }
 
     .music-header-container {
         display: flex;
@@ -191,8 +187,8 @@
     }
 
     #menu {
-        position: fixed;
-        right: 0px;
+        position: absolute;
+        right: -34px;
         top: 70px;
         width: 100px;
         background-color: #3E3939;
