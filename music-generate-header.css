@@ -7,16 +7,15 @@
 
 .music-header-container {
     display: flex;
-    width: 1152px;
+    /* width: 1152px; */
     width: 90%;
     margin: auto;
     justify-content: space-between;
-    margin: auto;
+    position: relative;
+
 }
 
-.music-header-container .logo img {
-    height: 70px;
-}
+
 
 .music-style-search {
     display: flex;
@@ -46,7 +45,8 @@
 }
 
 .music-style-search-bar .search-input {
-    width: 300px;
+    width: 100%;
+    min-width: 300px;
     height: 30px;
     border-radius: 0 10px 10px 0;
     font-size: 16px;
@@ -106,4 +106,134 @@
     font-family: 'Inter-Medium', sans-serif;
     font-size: 14px;
     text-decoration: none;
+}
+
+
+
+@media screen and (min-width:769px) {
+    .music-header-container .logo {
+        height: 70px;
+    }
+
+    .music-header-container .logo img {
+        height: 100%;
+    }
+
+    .hb-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .music-generate-header {
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .music-header-container {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        /* position: relative; */
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .user-account {
+        display: none;
+    }
+
+    .sign-out-button {
+        display: none;
+    }
+
+    .music-style-search {
+        margin: auto;
+    }
+
+    .music-style-search {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .hb-menu {
+        height: 70px;
+        position: relative;
+    }
+
+    #btnHam {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* padding: 0 20px 0 80px; */
+        margin: auto;
+        background: transparent;
+        text-decoration: none;
+        border: none;
+        color: white;
+        /* position: fixed; */
+        /* right: -20px;
+        bottom: 270px; */
+
+    }
+
+    #btnHam .fa-solid,
+    .fa-bars {
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    #menu {
+        position: fixed;
+        right: 0px;
+        top: 70px;
+        width: 100px;
+        background-color: #3E3939;
+        transition: right 1s;
+        opacity: 1;
+    }
+
+    #menu.hidden {
+        opacity: 0;
+    }
+
+    #menu li {
+        margin: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #menu li+li {
+        border-top: 1px solid white;
+    }
+
+    #menu a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    #menu a:hover {
+        color: rgb(193, 82, 154);
+    }
+
+    #menu li:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu .fa-solid,
+    .fa-house {
+        font-size: 16px;
+        padding: 0 5px;
+    }
 }

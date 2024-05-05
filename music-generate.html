@@ -33,8 +33,8 @@
                     <option value="Rock">搖滾</option>
                 </select>
                 <div class="music-style-search-bar">
-                    <input type="text" class="search-input" placeholder="搜索">
-                    <button class="music-style-search-btn"><a href="music-generate.html"><i
+                    <input type="text" id="music-generate-search" class="search-input" placeholder="搜索">
+                    <button class="music-style-search-btn disabled"><a href="music-generate.html" id="search-link-mg"><i
                                 class="fa-regular fa-circle-play"></i></a></button>
                 </div>
             </div>
@@ -46,8 +46,20 @@
                     <a href="index.html">登出</a>
                 </div>
             </div>
+            <div class="hb-menu">
+                <button id="btnHam" class="side-menu"><i class="fa-solid fa-bars"></i></button>
+                <div id="menu" class="border-hidden">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>首頁</a></li>
+                        <li><a href="music-generate.html">創作/推薦</a></li>
+                        <li><a href="#">收藏</a></li>
+                        <li><a href="index.html">登出</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         </div>
+
     </section>
     <section class="all-container">
         <!-- 側邊欄 -->
@@ -227,6 +239,7 @@
     </section>
     <!-- Script -->
     <script src="music-player.js"></script>
+    <script src="music-generate.js"></script>
 </body>
 
 </html>

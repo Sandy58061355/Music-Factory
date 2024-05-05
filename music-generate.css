@@ -18,6 +18,16 @@ body {
     display: flex;
 }
 
+@media screen and (max-width:768px) {
+    .all-container {
+        width: 90%;
+        margin: auto;
+        outline: 2px solid red;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* 側邊欄 */
 .side-menu {
     height: 100%;
@@ -119,6 +129,14 @@ body {
     /* height: 10px; */
 }
 
+@media screen and (max-width:768px) {
+    .side-menu {
+        display: none;
+    }
+}
+
+
+
 /* 側邊欄--End */
 /* music-generate-section */
 .music-generate-section {
@@ -179,7 +197,6 @@ body {
 
 
 .music-cassette-list .cassette {
-    width: 33.333333%;
     padding: 40px;
     text-align: center;
     cursor: pointer;
@@ -187,6 +204,7 @@ body {
 
 .music-cassette-list .cassette .cassette-pic {
     width: 200px;
+    /* width: 100%; */
 }
 
 .cassette .track-setting {
@@ -208,6 +226,43 @@ body {
     font-size: 18px;
     line-height: 150%;
     font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .generate-song-title h2 {
+        font-size: 22px;
+    }
+
+    .music-cassette-list {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .music-cassette-list .cassette {
+        padding: 40px 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .music-cassette-list .cassette .cassette-pic {
+        width: 160px;
+        /* width: 100%; */
+    }
+
+    .track-setting .favorite {
+        width: 22px;
+        opacity: .7;
+
+    }
+
+    .music-cassette-list .cassette span {
+        color: #f0f0f0;
+        text-align: center;
+        font-family: 'Inter-Medium', sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 500;
+    }
 }
 
 /* music-generate-section--End */
@@ -285,15 +340,46 @@ body {
     font-weight: 500;
 }
 
+@media screen and (max-width:768px) {
+    .recommand-song-title h2 {
+        font-size: 22px;
+    }
+
+    .music-recommand-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+        padding: 40px 20px;
+        /* overflow-y: auto; */
+    }
+
+
+    .recommand-album .recommand-album-pic {
+        width: 100px;
+    }
+
+    .recommand-album-setting .favorite {
+        width: 22px;
+        opacity: .7;
+    }
+
+    .recommand-album-setting span {
+        font-size: 16px;
+    }
+}
+
 /* music-reccomand-section--End */
 
 /* 音樂播放 */
 .music-player {
     height: 100px;
-    background: rgba(64, 78, 100, 0.80);
+    width: 100%;
+    background: rgba(64, 78, 100);
     border: 1px solid #000000;
-    opacity: .7;
-
+    opacity: .9;
+    position: fixed;
+    bottom: 0;
 }
 
 .music-player-container {
@@ -407,6 +493,51 @@ body {
 #download {
     color: rgba(217, 217, 217, 1);
     font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .music-player-container {
+        width: 95%;
+
+    }
+
+    .song-details img {
+        height: 50%;
+    }
+
+    .song-details #song-name {
+        font-size: 14px;
+    }
+
+    #play,
+    #pause {
+        height: 35px;
+        width: 35px;
+        font-size: 15.55px;
+        line-height: 35px;
+
+    }
+
+    #prev,
+    #next {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    #shuffle,
+    #repeat {
+        font-size: 12px;
+    }
+
+    .time-container {
+        font-size: 14px;
+    }
+
+    .fa-solid,
+    .fa-download {
+        font-size: 16px;
+        ;
+    }
 }
 
 /* 音樂播放--End */
