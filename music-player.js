@@ -13,10 +13,11 @@ const progressBar = document.getElementById("progress-bar");
 const currentProgress = document.getElementById("current-progress");
 const songDownload = document.getElementById("download");
 
-// 初始化歌曲索引和播放模式
-let index = 0;
-let isLooping = true;
-let isShuffling = false;
+//index for songs
+let index;
+
+//initially loop=true
+let loop = true;
 
 const songsList = [
     {
@@ -86,15 +87,18 @@ const songsList = [
     },
 
 ];
-
 //events object
 let events = {
-    mouse: { click: "click" },
-    touch: { click: "touchstart" },
+    mouse: {
+        click: "click",
+    },
+    touch: {
+        click: "touchstart",
+    },
 };
-let deviceType = "";
 const isTouchDevice = () => {
     try {
+        //We try to create TouchEvent(it would fail for desktops and throw error)
         document.createEvent("TouchEvent");
         deviceType = "touch";
         return true;
@@ -103,6 +107,18 @@ const isTouchDevice = () => {
         return false;
     }
 };
+let deviceType = "";
+// 點擊專輯封面時觸發事件
+cassetteAlbums.forEach((album, index) => {
+    album.addEventListener('click', () => {
+        // 更新當前播放的歌曲索引
+        index = index;
+        // 根据索引更新播放器下方的歌曲详情
+        setSong(index);
+    });
+});
+
+// 頁面加載完成時，初始化顯示第一首歌曲的詳情
 //Format time (convert ms to seconds, minutes and add 0 id less than 10)
 const timeFormatter = (timeInput) => {
     let minute = Math.floor(timeInput / 60);
@@ -111,23 +127,7 @@ const timeFormatter = (timeInput) => {
     second = second < 10 ? "0" + second : second;
     return `${minute}:${second}`;
 };
-const cassetteAlbums = document.querySelectorAll('.cassette-pic');
 
-// 点击专辑封面时触发事件
-cassetteAlbums.forEach((album, index) => {
-    album.addEventListener('click', () => {
-        // 更新当前播放的歌曲索引
-        index = index;
-        // 根据索引更新播放器下方的歌曲详情
-        setSong(index);
-    });
-});
-
-// 页面加载完成时，默认显示第一首歌曲的详情
-window.onload = () => {
-    // 初始化显示第一首歌曲的详情
-    setSong(0);
-};
 //set song
 const setSong = (arrayIndex) => {
     //this extracts all the variables from the object
@@ -146,13 +146,19 @@ const playAudio = () => {
     pauseButton.classList.remove("hide");
     playButton.classList.add("hide");
 };
-// 切换循环播放状态
+//repeat button
 repeatButton.addEventListener("click", () => {
-    isLooping = !isLooping;
-    audio.loop = isLooping; // 根据循环状态设置 audio 元素的 loop 属性
-    repeatButton.classList.toggle("active");
-    console.log(isLooping ? "Looping on" : "Looping off");
+    if (repeatButton.classList.contains("active")) {
+        repeatButton.classList.remove("active");
+        audio.loop = false;
+        console.log("repeat off");
+    } else {
+        repeatButton.classList.add("active");
+        audio.loop = true;
+        console.log("repeat on");
+    }
 });
+
 //Next song
 const nextSong = () => {
     //if loop is true then continue in normal order
@@ -198,14 +204,18 @@ audio.onended = () => {
     audio.pause(); // 停止播放音樂
 };
 
-
-
-// 切换随机播放状态
 shuffleButton.addEventListener("click", () => {
-    isShuffling = !isShuffling;
-    shuffleButton.classList.toggle("active");
-    console.log(isShuffling ? "Shuffling on" : "Shuffling off");
+    if (shuffleButton.classList.contains("active")) {
+        shuffleButton.classList.remove("active");
+        loop = true;
+        console.log("shuffle off");
+    } else {
+        shuffleButton.classList.add("active");
+        loop = false;
+        console.log("shuffle on");
+    }
 });
+
 //play button
 playButton.addEventListener("click", playAudio);
 
@@ -228,7 +238,7 @@ progressBar.addEventListener(events[deviceType].click, (event) => {
 
     //set width to progress
     currentProgress.style.width = progress * 100 + "%";
-
+.
     //set time
     audio.currentTime = progress * audio.duration;
 

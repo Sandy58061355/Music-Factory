@@ -10,24 +10,38 @@
     /* width: 1152px; */
     width: 90%;
     margin: auto;
-    justify-content: space-between;
-    position: relative;
+    /* justify-content: space-between;
+    position: relative; */
 
 }
 
-
-
 .music-style-search {
+    width: 80%;
     display: flex;
-    height: 70px;
+    /* height: 70px; */
     align-items: center;
     justify-content: center;
+    margin: auto;
+}
+
+.music-style-search-bar {
+    width: 60%;
+    display: flex;
+    position: relative;
+}
+
+.music-style-search-bar .search-input {
+    width: 100%;
+    /* min-width: 300px; */
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
 }
 
 .music-style-select {
     height: 36px;
-    width: 70px;
-    margin: auto;
+    width: 60px;
+    /* margin: auto; */
     font-size: 16px;
     color: black;
     background-color: rgba(173, 127, 155, 1);
@@ -40,17 +54,8 @@
     color: black;
 }
 
-.music-style-search-bar {
-    position: relative;
-}
 
-.music-style-search-bar .search-input {
-    width: 100%;
-    min-width: 300px;
-    height: 30px;
-    border-radius: 0 10px 10px 0;
-    font-size: 16px;
-}
+
 
 .music-style-search-btn {
     background-color: transparent;
@@ -110,6 +115,7 @@
 
 
 
+
 @media screen and (min-width:769px) {
     .music-header-container .logo {
         height: 70px;
@@ -122,11 +128,18 @@
     .hb-menu {
         display: none;
     }
+
+    #menu {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
     .music-generate-header {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
 
@@ -134,8 +147,8 @@
         display: flex;
         width: 90%;
         margin: auto;
-        justify-content: center;
-        position: relative;
+        justify-content: space-between;
+        /* position: relative; */
     }
 
     .logo {
@@ -154,11 +167,10 @@
         margin: auto;
     }
 
-    .music-style-search {
+    .music-style-search-bar {
         display: flex;
-        height: 70px;
-        align-items: center;
-        justify-content: center;
+        position: relative;
+        width: 70%;
     }
 
 
@@ -174,6 +186,7 @@
         text-decoration: none;
         border: none;
         color: white;
+        padding-right: 15px;
         /* position: fixed; */
         /* right: -20px;
         bottom: 270px; */
@@ -187,16 +200,20 @@
     }
 
     #menu {
-        position: fixed;
-        right: 0px;
-        top: 70px;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        /* position: fixed; */
+        /* right: 0px;
+        top: 70px; */
         width: 100px;
         background-color: #3E3939;
         transition: right 1s;
+        z-index: 1;
     }
 
-    #menu.hidden {
-        right: -120px;
+    #menu {
+        display: none;
     }
 
     #menu li {
