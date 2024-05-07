@@ -18,12 +18,10 @@
 <body>
     <!-- 導航欄 -->
     <section class="header">
-
         <div class="header-container">
             <div class="logo">
-                <a href="./index.html"><img src="./imgs/Logo-header.png" alt="header-Logo"></a>
+                <a href="index.html"><img src="./imgs/Logo-header.png" alt="header-Logo"></a>
             </div>
-            <input type="checkbox" id="burger">
             <nav class="header-title">
                 <ul>
                     <li><a href="index.html">首頁</a></li>
@@ -31,20 +29,33 @@
                     <li><a href="product-solution.html">產品與方案</a></li>
                     <li><a href="news.html">公告/最新消息</a></li>
                     <li><a href="hiring-plan.html">造音計畫</a></li>
-                    <li class="log-in"><a href="./sign-in.html">登入</a></li>
-                    <li class="sign-up"><a href="./register.html">註冊</a></li>
                 </ul>
             </nav>
+            <div class="log-button">
+                <div class="log-in">
+                    <a href="sign-in.html">登入</a>
+                </div>
+                <div class="sign-up">
+                    <a href="register.html">註冊</a>
+                </div>
+            </div>
+            <div class="main-page-hb">
+                <button id="mp-humberger" class="main-page-hb-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </div>
-        <!-- 漢堡 -->
-        <label for="burger" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <div id="mp-menu" class="hidden-menu" title="mp-hb">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about-us.html">關於造音</a></li>
+                <li><a href="product-solution.html">產品與方案</a></li>
+                <li><a href="news.html">公告/最新消息</a></li>
+                <li><a href="hiring-plan.html">造音計畫</a></li>
+                <li><a href="sign-in.html">登入</a></li>
+                <li><a href="register.html">註冊</a></li>
+            </ul>
         </div>
     </section>
-    <!-- Banner -->
+    <!-- Banner  -->
     <section class="banner">
         <div class="banner-container">
             <!-- <img src="imgs-front page\frontpage-banner.jpg" alt="background-pic"> -->

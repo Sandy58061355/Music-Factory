@@ -119,6 +119,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .style-tag ul {
+        width: 70%;
+    }
+
     .style-tag li {
         font-size: 14px;
         padding: 5px 8px;

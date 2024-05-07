@@ -76,17 +76,19 @@
 
 .story-container {
     width: 80%;
-    /* height: 100%; */
     margin: auto;
     display: flex;
     align-items: center;
 }
 
+
 .story-title {
-    width: 50%;
+    width: 45%;
     color: #ffffff;
     font-family: var(---font-family, 'Lemonada-Bold', sans-serif);
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 50px;
 }
 
@@ -100,27 +102,43 @@
 .story-title p {
     font-size: 16px;
     line-height: 200%;
-    padding-top: 50px;
     padding-right: 30px;
 }
 
 .red-album {
+    width: 55%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
-    margin-right: 50px;
+    /* margin-left: 100px; */
 
 }
 
-.red-cd {
+.red-cd-cover {
+    z-index: 1;
+}
+
+.red-cd-cover .cover-red {
     height: 280px;
     width: 280px;
+    padding: 20px;
+    background-color: rgba(173, 173, 173, 1);
+}
+
+#red-cd {
+    height: 260px;
+    width: 260px;
     border-radius: 50%;
-    transition: transform 1s, box-shadow 1s, filter 1s;
-    display: block;
+    /* transition: transform 1s, box-shadow 1s, filter 1s; */
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 32px;
+    right: 40%;
+    /* 图片高度的一半 */
+    /* 使用自动外边距实现居中 */
+
 }
 
 .rotating {
@@ -147,25 +165,15 @@
     }
 }
 
-.red-cd-cover {
-    position: absolute;
-    left: 150px;
-}
 
-.red-cd-cover img {
-    height: 300px;
-    width: 300px;
-    padding: 30px;
-    background-color: rgba(173, 173, 173, 1);
-}
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:1024px) {
     .story-container {
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .story-title {
@@ -209,16 +217,25 @@
         position: relative;
     }
 
-    .red-cd {
+    #red-cd {
         height: 260px;
         width: 260px;
+        position: absolute;
+        bottom: 100px;
+        right: 300px;
     }
 
+
     .red-cd-cover {
+        display: flex;
+        justify-content: center;
         position: absolute;
         right: 0px;
-        left: 0;
+
+        /* right: 0px;
+        left: 0; */
     }
+
 
     .red-cd-cover img {
         height: 250px;
@@ -226,6 +243,7 @@
         padding: 20px;
         background-color: rgba(173, 173, 173, 1);
     }
+
 }
 
 /* Factory-Story--End */
@@ -257,38 +275,13 @@
     margin-left: 200px;
 }
 
-.green-cd {
+#green-cd {
     height: 280px;
     width: 280px;
     border-radius: 50%;
     transition: transform 1s, box-shadow 1s, filter 1s;
     display: block;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.rotating {
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes shadowEffect {
-
-    0%,
-    100% {
-        box-shadow: 0 0 10px rgba(195, 193, 193, 0.5);
-        filter: brightness(100%);
-    }
-
-    50% {
-        box-shadow: 0 0 20px rgba(247, 247, 247, 0.8);
-        filter: brightness(125%);
-    }
 }
 
 .green-cd-cover {
@@ -328,7 +321,21 @@
     padding-left: 30px;
 }
 
-@media screen and (max-width:1120px) {
+.record {
+    transition: transform 1s;
+}
+
+.rotating {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 531px) and (max-width: 1120px) {
     .brand-value-container {
         width: 80%;
         display: flex;
@@ -372,13 +379,12 @@
         align-items: center;
         position: relative;
         margin-right: 0px;
-        margin: auto;
+        margin: auto auto;
         padding: 30px 0;
     }
 
-    .green-cd img {
-        height: 250px;
-        width: 250px;
+    #green-cd {
+        height: 220px;
     }
 
     .green-cd-cover {
@@ -387,9 +393,22 @@
     }
 
     .green-cd-cover img {
-        height: 250px;
-        width: 250px;
-        padding: 30px;
+        height: 220px;
+        width: 220px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:530px) {
+
+    #green-cd {
+        height: 180px;
+    }
+
+    .green-cd-cover img {
+        height: 180px;
+        width: 180px;
+        padding: 20px;
     }
 }
 

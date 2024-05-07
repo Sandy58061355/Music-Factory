@@ -17,7 +17,7 @@
     <section class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="./index.html"><img src="./imgs/Logo-header.png" alt="header-Logo"></a>
+                <a href="index.html"><img src="./imgs/Logo-header.png" alt="header-Logo"></a>
             </div>
             <nav class="header-title">
                 <ul>
@@ -30,12 +30,26 @@
             </nav>
             <div class="log-button">
                 <div class="log-in">
-                    <a href="./sign-in.html">登入</a>
+                    <a href="sign-in.html">登入</a>
                 </div>
                 <div class="sign-up">
-                    <a href="./register.html">註冊</a>
+                    <a href="register.html">註冊</a>
                 </div>
             </div>
+            <div class="main-page-hb">
+                <button id="mp-humberger" class="main-page-hb-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mp-menu" class="hidden-menu" title="mp-hb">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about-us.html">關於造音</a></li>
+                <li><a href="product-solution.html">產品與方案</a></li>
+                <li><a href="news.html">公告/最新消息</a></li>
+                <li><a href="hiring-plan.html">造音計畫</a></li>
+                <li><a href="sign-in.html">登入</a></li>
+                <li><a href="register.html">註冊</a></li>
+            </ul>
         </div>
     </section>
     <!-- about-us-banner -->
@@ -61,10 +75,10 @@
                 <p>造音工廠（Music Factory）成立於2024年，命名為造音工廠就是希望所有熱愛音樂的人可以在這個“工廠”裡自由的敲敲打打，輕鬆打造屬於自己的音樂。
                 </p>
             </div>
-            <div class="red-album" onclick="playMusic('red-cd', 'audio1')">
-                <img id="red-cd" class="red-cd" src="./imgs/mf-story.svg" alt="關於造音黑膠">
+            <div class="red-album">
+                <img id="red-cd" class="record" src="./imgs/mf-story.svg" alt="關於造音黑膠">
                 <div class="red-cd-cover">
-                    <img src="./imgs/about-us-album1.png" alt="關於造音黑膠封面">
+                    <img class="cover-red" src="./imgs/about-us-album1.png" alt="關於造音黑膠封面">
                     <audio id="audio1" src="./audio/mf-story.mp3"></audio>
                 </div>
             </div>
@@ -73,8 +87,8 @@
     <!-- Brand-value- -->
     <section class="brand-value">
         <div class="brand-value-container">
-            <div class="green-album" onclick="playMusic('green-cd', 'audio2')">
-                <img id="green-cd" class="green-cd" src="./imgs/brand-value.svg" alt="品牌理念黑膠">
+            <div class="green-album">
+                <img id="green-cd" class="record" src="./imgs/brand-value.svg" alt="品牌理念黑膠">
                 <div class="green-cd-cover">
                     <img src="./imgs/about-us-album2.png" alt="品牌理念黑膠封面">
                     <audio id="audio2" src="./audio/brand-value.mp3"></audio>
@@ -126,6 +140,7 @@
         </div>
     </section>
     <script src="./about-us.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
