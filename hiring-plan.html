@@ -152,40 +152,56 @@
                 有意應聘者請填寫以下表單，若通過初篩，將會由專人電話與郵件進行通知。
             </div>
             <div class="apply-information">
-                <div class="applicant-name">
-                    <span>姓名：</span>
-                    <input type="text" class="name-space">
-                </div>
-                <div class="applicant-phone-number">
-                    <span>聯絡電話：</span>
-                    <input type="text" class="phone-number-space">
-                </div>
-                <div class="applicant-email">
-                    <span>郵件地址：</span>
-                    <input type="text" class="email-space">
-                </div>
-                <div class="professional-music-style">
-                    <div class="music-style-content">
-                        <span class="professional-style">擅長音樂風格：</span>
-                        <span class="choose">*可複選</span>
+                <form>
+                    <div class="form-group">
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <select class="music-style-select">
-                        <option value="all">風格</option>
-                        <option value="hippop">流行</option>
-                        <option value="folk">民謠</option>
-                        <option value="classical">古典</option>
-                        <option value="Chinese-music">國樂</option>
-                        <option value="Jazz">爵士</option>
-                        <option value="Rock">搖滾</option>
-                    </select>
-                    <input type="text" class="music-style-space">
-                </div>
-                <div class="submit-aquirement">
-                    <span class="submit">表單送出後，需於1日內提供履歷(PDF格式)和音樂作品(30秒以上的音檔)，<br></span>
-                    寄至郵箱：MusicFactory@gmail.com，<br>
-                    <span class="email-name">郵件命名方式：</span>造音計畫_表單填寫姓名_履歷和音樂作品
-                </div>
-                <button class="submit-button">確定送出</button>
+
+                    <div class="form-group">
+                        <label for="phone">聯絡電話:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">郵件地址:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="music-style-check">
+                        <legend>擅長音樂風格（*可複選）:</legend>
+                        <div class="checkbox-group">
+                            <div class="check-box">
+                                <input type="checkbox" id="pop" name="music-style" value="pop">
+                                <label for="pop">流行</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="rock" name="music-style" value="rock">
+                                <label for="rock">搖滾</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="jazz" name="music-style" value="jazz">
+                                <label for="jazz">爵士</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="classical" name="music-style" value="classical">
+                                <label for="classical">古典</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="chinese-music" name="music-style" value="chinese-music">
+                                <label for="chinese-music">中國風</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="folk" name="music-style" value="folk">
+                                <label for="folk">民謠</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-aquirement">
+                        <span class="submit">表單送出後，需於1日內提供履歷(PDF格式)和音樂作品(30秒以上的音檔)，<br></span>
+                        寄至郵箱：MusicFactory@gmail.com，<br>
+                        <span class="email-name">郵件命名方式：</span>造音計畫_表單填寫姓名_履歷和音樂作品
+                    </div>
+                    <button class="submit-button">確定送出</button>
             </div>
         </div>
     </section>
