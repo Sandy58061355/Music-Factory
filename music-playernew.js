@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
         currentProgress.style.width = "0%";
-        currentTimeDisplay.textContent = timeFormatter(0);  // 设置初始时间显示为0:00
+        currentTimeDisplay.textContent = timeFormatter(0);
         updatePlayButton();
     }
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         songImage.src = tracks[index].cover;
         audioPlayer.load();
         audioPlayer.addEventListener('loadedmetadata', () => {
-            maxDurationDisplay.textContent = timeFormatter(audioPlayer.duration);  // 更新最大时长显示
+            maxDurationDisplay.textContent = timeFormatter(audioPlayer.duration);
         }, { once: true });
     }
 

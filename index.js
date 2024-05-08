@@ -54,6 +54,18 @@ $(document).ready(function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const selects = document.querySelectorAll('select.search-select-footer');
+    selects.forEach(selectElement => {
+        const defaultOption = selectElement.querySelector('option[value="all"]');
+        if (defaultOption) {
+            defaultOption.disabled = true;
+            defaultOption.hidden = true;
+        }
+    });
+});
+
 //footer搜索框必須輸入文字才能搜索之功能
 $(function () {
     $('#search-footer').on('input', function () {

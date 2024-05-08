@@ -167,7 +167,7 @@
     }
 
     .card:nth-child(2) {
-        width: 80%;
+        width: 75%;
         --lightness: 80%;
         background: #ffffff80;
         color: #000;

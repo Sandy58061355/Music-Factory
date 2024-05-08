@@ -1,5 +1,5 @@
 /* Banner+Serach */
-.banner-container {
+.banner {
     background-image: url('./imgs/frontpage-banner.jpg');
     background-size: cover;
     background-position: center center;
@@ -9,13 +9,16 @@
     z-index: -1;
 }
 
+.banner-container {
+    width: 90%;
+    margin: auto;
+}
+
 .slogan {
     color: #ffffff;
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
-    ;
-    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,13 +32,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding: 40px 0 10px 0;
     letter-spacing: -1px;
     /* 減小字符間的間距 */
 }
 
 .style-tag {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .style-tag ul {
@@ -65,10 +69,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0 20px 0;
 }
 
 .search-bar {
-    width: 50%;
+    width: 60%;
     display: flex;
     position: relative;
 }
@@ -78,7 +83,6 @@
     height: 30px;
     border-radius: 0 10px 10px 0;
     font-size: 16px;
-
 }
 
 .search-select {
@@ -95,8 +99,8 @@
 }
 
 .search-select option {
-    background-color: #fff;
-    color: black;
+    background-color: #3E3939;
+    color: white;
 }
 
 .search-btn {
@@ -119,6 +123,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .banner-container {
+        width: 90%;
+    }
+
     .style-tag ul {
         width: 70%;
     }
@@ -130,13 +138,23 @@
     }
 
     .slogan {
-        font-size: 32px;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
     }
 
     .slogan-text {
-        font-size: 20px;
+        font-size: 18px;
         padding-bottom: 20px;
+        line-height: 150%;
+        text-align: left;
     }
+
+    .style-tag li {
+        font-weight: 550;
+        margin: 0 10px 10px 10px;
+    }
+
 
     .search-bar {
         display: flex;
@@ -383,6 +401,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .pm-container {
+        width: 70%;
+    }
+
     .pm-card {
         display: flex;
         flex-direction: column;
@@ -532,8 +554,8 @@
 }
 
 .search-select-footer option {
-    background-color: #fff;
-    color: black;
+    background-color: #3E3939;
+    color: white;
 }
 
 .search-btn-footer {

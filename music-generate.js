@@ -36,6 +36,14 @@ musicStyleBtn.addEventListener('click', function (e) {
         alert('請輸入搜索內容');
     }
 });
+//隱藏選單"風格"在option中
+function handleSelectChange(selectElement) {
+    const defaultOption = selectElement.querySelector('option[value="all"]');
+    if (defaultOption) {
+        defaultOption.disabled = true;
+        defaultOption.hidden = true;
+    }
+}
 // 設定所有愛心圖標的點按事件
 document.querySelectorAll(".favorite").forEach(function (heart) {
     heart.onclick = function () {
@@ -59,10 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     links.forEach(link => {
         link.addEventListener('click', function () {
-            // 移除所有菜单项的 active 类
             links.forEach(node => node.classList.remove('active'));
 
-            // 给被点击的菜单项添加 active 类
             this.classList.add('active');
         });
     });
