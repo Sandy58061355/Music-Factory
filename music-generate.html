@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="music-generate.css">
     <script src=" https://kit.fontawesome.com/5d2e40022e.js" crossorigin="anonymous">
     </script>
-    <style>
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 
@@ -88,31 +87,31 @@
                 </div>
             </div>
             <div class="music-cassette-list">
-                <div class="cassette">
-                    <img id="song-image" class="cassette-pic" src="./imgs/cassette-Track-1.svg" alt="卡帶1">
+                <div class="cassette" data-src="./audio/audio-1.mp3" data-title="Track-01">
+                    <img class="cassette-pic" src="./imgs/cassette-Track-1.svg" alt="卡帶1">
                     <div class="track-setting">
-                        <span id="song-name">Track-01</span>
+                        <span>Track-01</span>
                         <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                     </div>
                 </div>
-                <div class="cassette">
-                    <img id="song-image" class="cassette-pic" src="./imgs/cassette-Track-2.svg" alt="卡帶2">
+                <div class="cassette" data-src="./audio/audio-2.mp3" data-title="Track-02">
+                    <img class="cassette-pic" src="./imgs/cassette-Track-2.svg" alt="卡帶2">
                     <div class="track-setting">
-                        <span id="song-name">Track-02</span>
+                        <span>Track-02</span>
                         <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                     </div>
                 </div>
-                <div class="cassette">
-                    <img id="song-image" class="cassette-pic" src="./imgs/cassette-Track-3.svg" alt="卡帶3">
+                <div class="cassette" data-src="./audio/audio-3.mp3" data-title="Track-03">
+                    <img class="cassette-pic" src="./imgs/cassette-Track-3.svg" alt="卡帶3">
                     <div class="track-setting">
-                        <span id="song-name">Track-03</span>
+                        <span>Track-03</span>
                         <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                     </div>
                 </div>
-                <div class="cassette">
-                    <img id="song-image" class="cassette-pic" src="./imgs/Track-04.svg" alt="卡帶3">
+                <div class="cassette" data-src="./audio/audio-4.mp3" data-title="Track-04">
+                    <img class="cassette-pic" src="./imgs/Track-04.svg" alt="卡帶3">
                     <div class="track-setting">
-                        <span id="song-name">Track-04</span>
+                        <span>Track-04</span>
                         <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                     </div>
                 </div>
@@ -124,63 +123,63 @@
                     <h2>相似曲風推薦</h2>
                 </div>
                 <div class="music-recommand-list">
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-pop.mp3" data-title="Always">
                         <img class="recommand-album-pic" src="./imgs/album1-Always.svg" alt="CD1">
                         <div class="recommand-album-setting">
                             <span>Always</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-pop2.mp3" data-title="Happy">
                         <img class="recommand-album-pic" src="./imgs/album2-Happy.svg" alt="CD2">
                         <div class="recommand-album-setting">
                             <span>Happy</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-romatic.mp3" data-title="Everyday">
                         <img class="recommand-album-pic" src="./imgs/album3-Everyday.svg" alt="CD3">
                         <div class="recommand-album-setting">
                             <span>Everyday</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD4.mp3" data-title="You">
                         <img class="recommand-album-pic" src="./imgs/album4-You.svg" alt="CD4">
                         <div class="recommand-album-setting">
                             <span>You</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD5.mp3" data-title="Just-Live">
                         <img class="recommand-album-pic" src="./imgs/album5-Just-Live.svg" alt="CD5">
                         <div class="recommand-album-setting">
                             <span>Just-Live</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD6.mp3" data-title="Once">
                         <img class="recommand-album-pic" src="./imgs/album6-Once.svg" alt="CD6">
                         <div class="recommand-album-setting">
                             <span>Once</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD7.mp3" data-title="Peace">
                         <img class="recommand-album-pic" src="./imgs/album7-Peace.svg" alt="CD7">
                         <div class="recommand-album-setting">
                             <span>Peace</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD8.mp3" data-title="Of">
                         <img class="recommand-album-pic" src="./imgs/album8-Of.svg" alt="CD8">
                         <div class="recommand-album-setting">
                             <span>Of</span>
                             <img class="favorite" src="./imgs/love-white.svg" id="heart" title="加入收藏">
                         </div>
                     </div>
-                    <div class="recommand-album">
+                    <div class="recommand-album" data-src="./audio/audio-CD9.mp3" data-title="Love.">
                         <img class="recommand-album-pic" src="./imgs/album9-Love.svg" alt="CD9">
                         <div class="recommand-album-setting">
                             <span>Love.</span>
@@ -196,7 +195,7 @@
     <section class="music-player">
         <div class="music-player-container">
             <div class="song-details">
-                <img id="song-image" src="./imgs/cassette-Track-1.svg" alt="Track-01">
+                <img id="song-image" src="./imgs/cassette-Track-1.svg" alt="song-photo">
                 <p id="song-name">Track-01</p>
             </div>
             <div class="player-sec">
@@ -220,7 +219,11 @@
                         <i class="fa-solid fa-repeat"></i>
                     </button>
                 </div>
-                <audio id="audio" preload="metadata"></audio>
+                <!-- <audio id="audio-player" preload="metadata"></audio> -->
+                <audio id="audio-player">
+                    <source src="" type="audio/mp3">
+                    您的瀏覽器不支持 audio 標簽。
+                </audio>
                 <div id="progress-bar">
                     <div id="current-progress"></div>
                 </div>
@@ -238,7 +241,7 @@
         </div>
     </section>
     <!-- Script -->
-    <script src="music-player.js"></script>
+    <script src="music-playernew.js"></script>
     <script src="music-generate.js"></script>
 </body>
 
