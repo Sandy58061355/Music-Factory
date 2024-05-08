@@ -30,6 +30,11 @@
     display: flex;
 }
 
+.header-title a:hover {
+
+    color: rgba(219, 147, 239, 0.7);
+}
+
 .header-title a {
     text-decoration: none;
     color: white;

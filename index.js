@@ -14,6 +14,7 @@ window.addEventListener("load", function () {
         }
     };
 })
+
 $(document).ready(function () {
     // 處理 hashtag 點擊事件，並更新搜索框
     $('#tag-softly, #tag-happy, #tag-piano').click(function (event) {

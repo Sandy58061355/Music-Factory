@@ -29,33 +29,42 @@
 }
 
 .about-us-content .hello {
+    display: inline-block;
     font-size: 36px;
+    padding-bottom: 25px;
 }
 
 .about-us-content .introduce {
+    display: inline-block;
     font-size: 26px;
+    padding-bottom: 20px;
 }
 
 .about-us-content .listen-somethings {
+    display: inline-block;
     font-size: 20px;
 }
 
 @media screen and (max-width:768px) {
     .about-us-content {
         width: 80%;
+        font-weight: 550;
     }
 
     .about-us-content .hello {
-        font-size: 32px;
+        font-size: 30px;
+        padding-bottom: 15px;
     }
 
     .about-us-content .introduce {
-        font-size: 22px;
+        font-size: 18px;
+        padding-bottom: 10px;
     }
 
     .about-us-content .listen-somethings {
         font-size: 16px;
-        font-weight: 600;
+        padding: 10px 0;
+
     }
 
 
@@ -126,19 +135,18 @@
     background-color: rgba(173, 173, 173, 1);
 }
 
+
 #red-cd {
     height: 260px;
     width: 260px;
     border-radius: 50%;
-    /* transition: transform 1s, box-shadow 1s, filter 1s; */
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
     position: absolute;
-    bottom: 32px;
+    bottom: 2.5vw;
+    /* 使用视口宽度的百分比来设置位置 */
     right: 40%;
-    /* 图片高度的一半 */
-    /* 使用自动外边距实现居中 */
-
+    /* 根据实际需要调整 */
 }
 
 .rotating {
@@ -165,11 +173,9 @@
     }
 }
 
-
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:960px) {
     .story-container {
-        margin: 0;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -192,16 +198,6 @@
         position: relative;
     }
 
-    /* .story-title h2::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 3px;
-        background-color: rgb(67, 26, 67);
-        border-radius: 5px;
-        bottom: -3px;
-    } */
-
     .story-title p {
         font-size: 16px;
         line-height: 200%;
@@ -215,36 +211,38 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-left: 70px;
     }
 
     #red-cd {
-        height: 260px;
-        width: 260px;
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
         position: absolute;
-        bottom: 100px;
-        right: 300px;
+        bottom: 48.5px;
+        right: 42vw;
     }
-
 
     .red-cd-cover {
         display: flex;
         justify-content: center;
-        position: absolute;
-        right: 0px;
+        align-items: center;
+        height: 240px;
+        width: 240px;
+        margin: 40px 0;
 
-        /* right: 0px;
-        left: 0; */
     }
 
-
-    .red-cd-cover img {
-        height: 250px;
-        width: 250px;
+    .red-cd-cover .cover-red {
+        height: 100%;
+        width: 100%;
         padding: 20px;
         background-color: rgba(173, 173, 173, 1);
     }
-
 }
+
 
 /* Factory-Story--End */
 /* Brand-value */
@@ -267,34 +265,34 @@
 }
 
 .green-album {
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
-    margin-right: 30px;
-    margin-left: 200px;
 }
 
 #green-cd {
-    height: 280px;
-    width: 280px;
+    height: 260px;
+    width: 260px;
     border-radius: 50%;
-    transition: transform 1s, box-shadow 1s, filter 1s;
-    display: block;
     cursor: pointer;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 2.5vw;
+    left: 40%;
 }
 
 .green-cd-cover {
-    position: absolute;
-    right: 150px;
+    z-index: 1;
 }
 
 .green-cd-cover img {
-    height: 300px;
-    width: 300px;
-    padding: 30px;
+    height: 280px;
+    width: 280px;
+    padding: 20px;
     background-color: rgb(31, 17, 86);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .brand-value-title {
@@ -335,7 +333,8 @@
     }
 }
 
-@media (min-width: 531px) and (max-width: 1120px) {
+
+@media screen and (max-width:960px) {
     .brand-value-container {
         width: 80%;
         display: flex;
@@ -361,55 +360,41 @@
 
     }
 
-    /* .story-title h2::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 3px;
-        background-color: rgb(67, 26, 67);
-        border-radius: 5px;
-        bottom: -3px;
-    } */
-
-
     .green-album {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         position: relative;
-        margin-right: 0px;
-        margin: auto auto;
-        padding: 30px 0;
+        margin: 10px 95px 0 0;
     }
 
     #green-cd {
         height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+        position: absolute;
+        bottom: 45px;
+        left: 42vw;
     }
 
     .green-cd-cover {
-        position: absolute;
-        left: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        height: 240px;
+        width: 240px;
     }
 
     .green-cd-cover img {
-        height: 220px;
-        width: 220px;
+        height: 100%;
+        width: 100%;
         padding: 20px;
     }
-}
 
-@media screen and (max-width:530px) {
-
-    #green-cd {
-        height: 180px;
-    }
-
-    .green-cd-cover img {
-        height: 180px;
-        width: 180px;
-        padding: 20px;
-    }
 }
 
 /* Brand-value--End */

@@ -36,21 +36,6 @@ musicStyleBtn.addEventListener('click', function (e) {
         alert('請輸入搜索內容');
     }
 });
-// //加入收藏與取消收藏
-// function switchFavorite() {
-//     var heart = document.getElementById("heart");
-//     if (heart.title === "加入收藏") {
-//         heart.src = "./imgs/love-red.svg";
-//         heart.title = "取消收藏";
-//     } else {
-//         heart.src = "./imgs/love-white.svg";
-//         heart.title = "加入收藏";
-//     }
-// }
-
-// //設定[加入收藏 或 取消收藏]的點按事件
-// document.getElementById("heart").onclick = switchFavorite;
-
 // 設定所有愛心圖標的點按事件
 document.querySelectorAll(".favorite").forEach(function (heart) {
     heart.onclick = function () {
