@@ -68,3 +68,17 @@ function switchFavorite(heart) {
         heart.title = "加入收藏";
     }
 }
+//釘選菜單效果
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.side-menu-bar a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            // 移除所有菜单项的 active 类
+            links.forEach(node => node.classList.remove('active'));
+
+            // 给被点击的菜单项添加 active 类
+            this.classList.add('active');
+        });
+    });
+});

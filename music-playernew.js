@@ -1,4 +1,4 @@
-ddocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const audioPlayer = document.getElementById('audio-player');
     const playButton = document.getElementById('play');
     const pauseButton = document.getElementById('pause');
