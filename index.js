@@ -1,19 +1,25 @@
 // 漢堡
+// window.addEventListener("load", function () {
+//     //------btnHam漢堡按鈕被點按時
+//     document.getElementById("mp-humberger").onclick = function showmenu() {
+//         //取得選單的參考
+//         let mpMenu = document.getElementById("mp-menu");
+//         //  檢測是否有hidden類, 再決定是要加入或移除
+//         if (mpMenu.title === "mp-hb") {
+//             mpMenu.style.display = "flex";
+//             mpMenu.title = "";
+//         } else {
+//             mpMenu.style.display = "none";
+//             mpMenu.title = "mp-hb";
+//         }
+//     };
+// })
 window.addEventListener("load", function () {
-    //------btnHam漢堡按鈕被點按時
-    document.getElementById("mp-humberger").onclick = function showmenu() {
-        //取得選單的參考
+    document.getElementById("mp-humberger").addEventListener("click", function () {
         let mpMenu = document.getElementById("mp-menu");
-        //  檢測是否有hidden類, 再決定是要加入或移除
-        if (mpMenu.title === "mp-hb") {
-            mpMenu.style.display = "flex";
-            mpMenu.title = "";
-        } else {
-            mpMenu.style.display = "none";
-            mpMenu.title = "mp-hb";
-        }
-    };
-})
+        mpMenu.classList.toggle('active');
+    });
+});
 
 $(document).ready(function () {
     // 處理 hashtag 點擊事件，並更新搜索框

@@ -139,16 +139,25 @@
         font-size: 26px;
     }
 
-    #mp-menu {
+    /* #mp-menu {
         display: flex;
         justify-content: center;
         width: 100%;
         transition: right 1s;
 
+    } */
+    #mp-menu {
+        display: flex;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-out;
+        width: 100%;
+        position: absolute;
+        top: 70px;
     }
 
-    #mp-menu {
-        display: none;
+    #mp-menu.active {
+        max-height: 300px;
     }
 
     #mp-menu ul {
