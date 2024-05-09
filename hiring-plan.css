@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+
 }
 
 .slogan-chi h1 {
@@ -70,6 +70,7 @@
 .slogan-en {
     padding: 0 20px;
     letter-spacing: 0.4em;
+    position: relative;
 }
 
 .slogan-en .slogan-base {
@@ -91,7 +92,7 @@
     line-height: 145%;
     font-weight: 500;
     position: absolute;
-    left: 111px;
+    left: 19px;
     bottom: -1px;
 
 }
@@ -126,7 +127,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-        position: relative;
+
     }
 
     .slogan-chi h1 {
@@ -140,6 +141,10 @@
         padding: 20px 0;
     }
 
+    .slogan-en {
+        position: relative;
+    }
+
     .slogan-en .slogan-base {
         font-size: 36px;
     }
@@ -147,7 +152,7 @@
     .slogan-en .slogan-overlay {
         font-size: 36px;
         position: absolute;
-        left: 51px;
+        left: 19px;
         bottom: -1px;
 
     }
