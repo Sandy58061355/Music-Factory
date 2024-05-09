@@ -62,8 +62,19 @@ function switchFavorite(heart) {
     }
 }
 //釘選菜單效果
+// document.addEventListener("DOMContentLoaded", function () {
+//     const links = document.querySelectorAll('.side-menu-bar a');
+
+//     links.forEach(link => {
+//         link.addEventListener('click', function () {
+//             links.forEach(node => node.classList.remove('active'));
+
+//             this.classList.add('active');
+//         });
+//     });
+// });
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll('.side-menu-bar a');
+    const links = document.querySelectorAll('.side-menu-bar a.activatable');
 
     links.forEach(link => {
         link.addEventListener('click', function () {
