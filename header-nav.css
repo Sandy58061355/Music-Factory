@@ -132,6 +132,7 @@
         border: none;
         color: white;
         padding-right: 15px;
+        cursor: pointer;
     }
 
     #btnHam .fa-solid,
@@ -173,8 +174,13 @@
         text-align: center;
     }
 
-    #mp-menu li+li {
-        border-top: 1px solid white;
+    #mp-menu ul a {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+
+    #mp-menu ul a:last-child {
+        border-bottom: none;
     }
 
     #mp-menu a {

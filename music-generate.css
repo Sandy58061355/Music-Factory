@@ -343,6 +343,7 @@ body {
 .recommand-album-setting .favorite {
     width: 25px;
     opacity: .7;
+    cursor: pointer;
 
 }
 
@@ -372,6 +373,7 @@ body {
 
     .recommand-album .recommand-album-pic {
         width: 100px;
+        cursor: pointer;
     }
 
     .recommand-album-setting .favorite {
