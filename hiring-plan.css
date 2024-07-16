@@ -1,7 +1,8 @@
 /* hiring-main-page */
 .hiring-main-page {
     width: 100%;
-    height: 560px;
+    min-height: 560px;
+    height: 100vh;
     /* background: linear-gradient(0.51deg, rgba(176, 86, 86, 1.00) 0%, rgba(32, 7, 52, 1.00) 100%); */
     display: flex;
     justify-content: center;

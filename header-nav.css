@@ -5,6 +5,9 @@
     height: 70px;
     border: 1px soild black;
     background-color: #3E3939;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 
