@@ -13,14 +13,14 @@ body {
 .all-container {
     /* height: 100%; */
     width: 80%;
-    margin: auto;
+    margin: 80px auto;
     display: flex;
 }
 
 @media screen and (max-width:768px) {
     .all-container {
         width: 90%;
-        margin: auto;
+        margin: 80px auto;
         /* outline: 2px solid red; */
         display: flex;
         justify-content: center;
